@@ -1,0 +1,68 @@
+@import "./colors";
+
+.pinkButton {
+  background-color: $pink;
+  padding: 1.3rem 1.3rem;
+  border: none;
+  font-size: 1.8rem;
+  color: $white;
+  font-weight: 500;
+  transition: filter 0.2s;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 999;
+  letter-spacing: 0.2em;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.greenButton {
+  background-color: $verde;
+  border: none;
+  font-size: 1.8rem;
+  color: $white;
+  font-weight: 600;
+  transition: filter 0.2s;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.roxoButton {
+  background-color: $roxo;
+  border: none;
+  font-size: 1.8rem;
+  color: $white;
+  font-weight: 600;
+  transition: filter 0.2s;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

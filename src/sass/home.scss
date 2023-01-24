@@ -1,0 +1,977 @@
+@import "./parts/global";
+@import "./parts/colors";
+@import "./parts/buttons";
+
+.initial-banner {
+  background: linear-gradient(180deg, #edd6d740 0%, #c1c7d740 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+
+  .logo {
+    max-width: 17.2rem;
+    margin-top: 4rem;
+  }
+
+  > div {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 7rem;
+    z-index: 2;
+
+    img {
+      margin-bottom: -4rem;
+    }
+
+    .pinkButton {
+      width: 40.8rem;
+      height: 8.8rem;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+
+  h1 {
+    color: $roxo;
+    font-family: $contralto;
+    max-width: 44.2rem;
+    letter-spacing: 0.05em;
+  }
+
+  @media screen and (max-width: 600px) {
+    > div {
+      flex-direction: column-reverse;
+      text-align: center;
+      place-items: center;
+      margin-bottom: 4rem;
+
+      img {
+        max-width: 80vw;
+        margin-top: 4rem;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      .pinkButton {
+        width: 30.8rem;
+        height: 6.8rem;
+        margin: auto;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.como-posso-ajudar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  height: 100vh;
+  gap: 13.2rem;
+
+  .linha-banner {
+    z-index: 1;
+    top: -43rem;
+    position: absolute;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .title-container {
+    h4 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: 0.2em;
+      color: $cinza;
+    }
+
+    h2 {
+      font-family: "Contralto Big";
+      font-weight: 700;
+      font-size: 4.8rem;
+      line-height: 5.8rem;
+      letter-spacing: 0.05em;
+      color: $roxo;
+      max-width: 27.6rem;
+    }
+  }
+
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+    z-index: 2;
+
+    .icon-wrapper {
+      display: flex;
+      align-items: center;
+
+      > div {
+        width: 6.2rem;
+        height: 6.2rem;
+        display: flex;
+        place-items: center;
+        border-radius: 1rem;
+        border: 0.15rem solid $azul;
+        justify-content: center;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: -0.015em;
+        color: $cinza2;
+        margin-left: 1.2rem;
+      }
+    }
+
+    button {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.2em;
+      width: 17.5rem;
+      height: 4.8rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    height: auto;
+    gap: 5.2rem;
+    margin-bottom: 5rem;
+
+    .linha-banner {
+      top: -19rem;
+      object-fit: none;
+    }
+
+    .title-container {
+      margin-top: 10rem;
+    }
+
+    .info-container {
+      column-gap: 4rem;
+
+      button {
+        margin-top: auto;
+      }
+    }
+
+    .icon-wrapper {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .greenButton {
+      height: 5rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.depoimentos {
+  display: flex;
+  background: linear-gradient(360deg, rgba(193, 205, 222, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  justify-content: center;
+  place-items: center;
+  gap: 4.8rem;
+  z-index: 3;
+
+  > img {
+    margin-bottom: -4rem;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 0.2em;
+    color: #bab7b7;
+  }
+
+  h2 {
+    font-family: "Contralto Big";
+    font-size: 4rem;
+    line-height: 4.8rem;
+    color: $roxo;
+  }
+
+  .depo-wrapper {
+    width: 62vw;
+    overflow-x: hidden;
+    margin-left: -100px;
+    margin-right: 0;
+  }
+
+  .swiper {
+    overflow: unset;
+  }
+
+  .swiper-wrapper {
+  }
+
+  .nav-depo {
+    display: flex;
+    justify-content: end;
+
+    .left {
+      margin-right: 2rem;
+    }
+
+    .swiper-button-next:after {
+      content: "";
+    }
+
+    .swiper-button-prev:after {
+      content: "";
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: unset;
+      cursor: pointer;
+      margin-bottom: -2rem;
+      height: 10rem;
+    }
+  }
+
+  .depos {
+    display: flex;
+    gap: 3rem;
+    margin-left: -10rem;
+    transition: all 0.2s;
+  }
+
+  .depo-container {
+    flex: 1;
+
+    .greenButton {
+      width: 31.4rem;
+      height: 4.8rem;
+      margin-top: 7.6rem;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.8rem;
+    min-width: 57.7rem;
+    background: #ffffff;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    min-height: 32rem;
+
+    .aspas {
+      width: 4.1rem;
+      margin-right: 3.2rem;
+      margin-left: auto;
+      margin-top: 2.6rem;
+    }
+
+    p {
+      max-width: 47.2rem;
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: #7a7a7a;
+    }
+
+    h4 {
+      font-family: "Contralto Big";
+      font-size: 2.4rem;
+      line-height: 2.7rem;
+      text-align: right;
+      color: $pink;
+      margin-right: 1.6rem;
+      margin-bottom: 2.3rem;
+      margin-top: auto;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+
+    > img {
+      max-width: 80vw;
+      border-top: 1px solid #c1cdde30;
+      padding-top: 4rem;
+    }
+
+    .depo-container {
+      text-align: center;
+      margin-top: 4rem;
+
+      .greenButton {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+    }
+
+    .nav-depo {
+      display: none;
+    }
+
+    .swiper-wrapper {
+      margin-left: 0;
+    }
+
+    .swiper {
+      margin-top: 2rem;
+      margin-left: 0;
+
+      .card {
+        min-width: 31.3rem;
+        padding-right: 2.8rem;
+
+        p {
+          font-weight: 300;
+          font-size: 1.3rem;
+          line-height: 120%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.acompanhamento {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 10rem;
+
+  .linhas {
+    position: absolute;
+    bottom: -70rem;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .title-container {
+    position: relative;
+
+    h4 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: 0.2em;
+      color: #bab7b7;
+    }
+
+    h2 {
+      font-family: "Contralto Big";
+      font-size: 4.8rem;
+      line-height: 5.8rem;
+      color: $roxo;
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+      top: -10rem;
+    }
+  }
+
+  .passos {
+    margin-top: 9rem;
+
+    .step {
+      display: flex;
+      gap: 3.5rem;
+      padding-bottom: 2.9rem;
+      border-bottom: 1px solid #c1cdde20;
+      margin-bottom: 3.2rem;
+
+      h2 {
+        font-family: "Contralto Big";
+        font-size: 6.4rem;
+        line-height: 7.7rem;
+        color: $verde;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: $verde;
+      }
+
+      .pink {
+        color: $pink;
+      }
+
+      .roxo {
+        color: $roxo;
+      }
+
+      p {
+        width: 510px;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        color: #616671;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20rem;
+    gap: 0rem;
+
+    .linhas {
+      bottom: -22rem;
+      object-fit: none;
+    }
+
+    .passos {
+      margin-top: 4rem;
+      margin-bottom: 8rem;
+
+      .step {
+        flex-direction: column;
+        gap: 1.5rem;
+
+        p {
+          width: 80vw;
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
+
+        h3 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.app {
+  background: linear-gradient(90deg, #edd6d730 0%, #c1c7d730 100%);
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 12rem;
+
+  .content {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h2 {
+    font-family: "Contralto Big";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    letter-spacing: -0.015em;
+    color: #a57aab;
+  }
+
+  p {
+    font-size: 2rem;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #616671;
+  }
+
+  img {
+    margin-top: 5.1rem;
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 7.4rem;
+    gap: 0rem;
+
+    .content {
+      max-width: 80vw;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.quem-eh {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 6.7rem;
+  height: 120vh;
+  background: linear-gradient(0, rgba(193, 205, 222, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+
+  > div {
+    h4 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      letter-spacing: 0.2em;
+      color: #bab7b7;
+    }
+
+    h2 {
+      font-family: "Contralto Big";
+      font-size: 4.8rem;
+      line-height: 6rem;
+      color: #d95b7d;
+      margin-bottom: 1rem;
+      margin-top: -1rem;
+    }
+
+    p {
+      max-width: 53.5rem;
+      margin-bottom: 2.6rem;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 120%;
+      letter-spacing: -0.015em;
+      color: #616671;
+    }
+
+    .greenButton {
+      width: 306px;
+      height: 65px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 11rem;
+
+    img {
+      max-width: 80vw;
+      height: 70vh;
+      object-fit: cover;
+      margin-top: 6rem;
+    }
+
+    > div {
+      text-align: center;
+      p {
+        max-width: 80vw;
+      }
+    }
+  }
+}
+
+.frase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  background: linear-gradient(90deg, #edd6d730 0%, #c1c7d730 100%);
+  height: 34rem;
+
+  .roxoButton {
+    height: 4.8rem;
+    width: 31.4rem;
+    margin-top: 4.4rem;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #a57aab;
+    max-width: 53.2rem;
+  }
+  > div {
+    position: relative;
+
+    .left-quote {
+      position: absolute;
+      left: -3rem;
+      top: 0;
+    }
+
+    .right-quote {
+      position: absolute;
+      right: 4rem;
+      bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    p {
+      max-width: 29.2rem;
+      font-size: 1.8rem;
+    }
+
+    > div {
+      .left-quote {
+        left: -4rem;
+        top: -21px;
+      }
+      .right-quote {
+        right: -1rem;
+        bottom: -12px;
+      }
+    }
+  }
+}
+
+.video-consulta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  height: 100vh;
+  gap: 13rem;
+
+  .linhas {
+    position: absolute;
+    top: -37rem;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .video-youtube {
+    z-index: 3;
+    border: none;
+    border-radius: 10px;
+  }
+
+  > div {
+    z-index: 3;
+
+    h4 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      letter-spacing: 0.2em;
+      color: #bab7b7;
+    }
+
+    h2 {
+      font-family: "Contralto Big";
+      font-size: 4.8rem;
+      line-height: 5.8rem;
+      color: $roxo;
+    }
+
+    .pinkButton {
+      margin-top: 4.5rem;
+      width: 30.3rem;
+      height: 4.8rem;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    height: auto;
+    padding-top: 8rem;
+    gap: 6rem;
+
+    .linhas {
+      top: -14rem;
+      object-fit: none;
+    }
+
+    > div {
+      h2 {
+        font-size: 3.2rem;
+      }
+
+      .pinkButton {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}
+
+.instagram {
+  background: linear-gradient(0, rgba(193, 205, 222, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 11.7rem;
+
+  img {
+    width: 18vw;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 600px) {
+    gap: 2rem;
+    padding: 10rem;
+
+    img {
+      width: 50vw;
+    }
+  }
+}
+
+.form {
+  background: linear-gradient(180deg, #edd6d7 0%, #c1c7d7 100%);
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 10.4rem;
+  overflow: visible;
+  height: 40rem;
+  z-index: 2;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    background-color: $white;
+    padding: 1.5rem 2.7rem 0 2.9rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-family: "Contralto Big";
+      font-size: 3.2rem;
+      line-height: 100%;
+      letter-spacing: -0.015em;
+      color: #d95b7d;
+      margin-bottom: 1.6rem;
+    }
+
+    input {
+      width: 36.2rem;
+      height: 4.8rem;
+      margin-bottom: 3.2rem;
+      border: none;
+      border-radius: 1rem;
+      border: 1.5px solid #a57aab;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.015em;
+      color: #616671;
+      padding-left: 1rem;
+    }
+
+    button {
+      width: 36.2rem;
+      height: 4.8rem;
+      margin-bottom: 3.2rem;
+      border: none;
+      border-radius: 1rem;
+    }
+  }
+
+  > div {
+    max-width: 40.8rem;
+    margin-top: 14.7rem;
+
+    h3 {
+      font-family: "Contralto Big";
+      font-size: 3.2rem;
+      letter-spacing: -0.015em;
+      color: #d95b7d;
+    }
+
+    p {
+      font-family: "Articulat CF";
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 120%;
+      letter-spacing: -0.015em;
+      color: #616671;
+      margin-bottom: 16.2rem;
+      margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    height: auto;
+    text-align: center;
+    gap: 4.4rem;
+
+    > div {
+      margin-top: 6.7rem;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    form {
+      margin-bottom: -4rem;
+    }
+  }
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5.1rem;
+
+  .gray {
+    background-color: rgba(193, 205, 222, 0.2);
+    height: 10rem;
+    width: 80vw;
+  }
+
+  > div {
+    margin-top: -2rem;
+    display: flex;
+    gap: 7.2rem;
+    place-items: center;
+
+    h2 {
+      font-family: "Contralto Big";
+      font-size: 3.2rem;
+      letter-spacing: -0.015em;
+      color: #a57aab;
+      margin-bottom: 1.4rem;
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: 120%;
+      letter-spacing: -0.015em;
+      color: #bab7b7;
+      margin-bottom: 2.5rem;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+
+    button {
+      width: 31.4rem;
+      height: 4.8rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    height: auto;
+    padding-bottom: 0;
+
+    .gray {
+      display: none;
+    }
+
+    > div {
+      flex-direction: column-reverse;
+      margin: auto;
+      margin-top: 12rem;
+      justify-content: center;
+      place-items: center;
+      text-align: center;
+      max-width: 70vw;
+    }
+
+    iframe {
+      width: 100vw;
+    }
+  }
+}
+
+footer {
+  background: #a57aab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  color: $white;
+  padding-bottom: 8rem;
+  padding-top: 10rem;
+
+  > div {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff90;
+    padding-bottom: 3rem;
+    margin-bottom: 2.8rem;
+    align-items: center;
+
+    .logo {
+      width: 17.2rem;
+      height: 12rem;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .iconWrapper {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        height: 1.4rem;
+        width: 1.4rem;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 1.6rem;
+        color: #ffffff;
+      }
+    }
+
+    img {
+      cursor: pointer;
+      width: 2.6rem;
+      margin-right: 1rem;
+    }
+
+    img + img {
+      width: 3.3rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+
+    > div {
+      flex-direction: column;
+      .logo {
+        margin-bottom: 8rem;
+        margin-top: 8rem;
+      }
+    }
+  }
+}
+
+.zap {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999;
+  cursor: pointer;
+
+  img {
+    height: 65px;
+  }
+}

@@ -1,0 +1,128 @@
+$contralto: "contralto-big", sans-serif;
+$articulat: "articulat-cf", sans-serif;
+$articulat-heavy: "articulat-heavy-cf", sans-serif;
+
+strong {
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  // @media (max-width: 1400px) {
+  //   html,
+  //   body,
+  //   #root {
+  //     font-size: 55.5%;
+  //   }
+  // }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialised;
+  font-family: $articulat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: $articulat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $articulat;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    font-size: 1.6rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.only-mobile {
+  display: none;
+}
+
+@media (orientation: portrait) and (max-width: 500px) {
+  .only-mobile {
+    display: block;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
