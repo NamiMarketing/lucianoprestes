@@ -1,57 +1,37 @@
 @import "./colors";
 
-.pinkButton {
-  background-color: $pink;
-  padding: 1.3rem 1.3rem;
+.green-button {
   border: none;
-  font-size: 1.8rem;
   color: $white;
-  font-weight: 500;
   transition: filter 0.2s;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  z-index: 999;
-  letter-spacing: 0.2em;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
-}
-
-.greenButton {
-  background-color: $verde;
-  border: none;
-  font-size: 1.8rem;
-  color: $white;
-  font-weight: 600;
-  transition: filter 0.2s;
-  border-radius: 1rem;
-  font-weight: 500;
-  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: -0.015em;
   text-transform: uppercase;
   display: flex;
   place-items: center;
   justify-content: center;
   z-index: 999;
+  width: 306px;
+  height: 48px;
+  background: #74c28a;
+  border-radius: 2px;
 
   &:hover {
     filter: brightness(0.8);
   }
 }
 
-.roxoButton {
-  background-color: $roxo;
+.blue-button {
+  background: linear-gradient(90deg, #1e9daf -50.1%, #70c3b8 100%);
+
   border: none;
   font-size: 1.8rem;
   color: $white;
   font-weight: 600;
   transition: filter 0.2s;
-  border-radius: 1rem;
+  border-radius: 6rem;
   font-weight: 500;
   font-size: 1.8rem;
   text-align: center;

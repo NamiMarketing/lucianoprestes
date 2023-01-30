@@ -1,6 +1,162 @@
 @import "colors";
 
-footer{
-  background-color: red;
-}
+footer {
+  background-color: #15527a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
 
+  .top {
+    display: flex;
+    padding-top: 9.6rem;
+    justify-content: space-between;
+    width: 80vw;
+
+    .left {
+      .logo {
+        margin-bottom: 5.5rem;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 120%;
+        letter-spacing: -0.015em;
+        color: #ffffff;
+        margin-bottom: 1.8rem;
+        margin-left: 2rem;
+
+        img {
+          margin-top: 4px;
+          margin-right: 1rem;
+        }
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+
+        a {
+          margin-bottom: 0;
+        }
+
+        img + a {
+          margin-left: 0;
+        }
+
+        .point {
+          margin-right: 1rem;
+          margin-top: 6px;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+
+      p {
+        font-weight: 700;
+        font-size: 1.8re;
+        line-height: 140%;
+        letter-spacing: -0.015em;
+        color: #ffffff;
+        margin-bottom: 0.4rem;
+        font-family: "montserrat";
+      }
+
+      .green-button {
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: #15527a;
+        width: 18.3rem;
+        height: 2.8rem;
+        margin-bottom: 2rem;
+        font-family: "MontSerrat";
+
+        img {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  .line {
+    border: 1px solid #ffffff;
+    width: 80vw;
+    margin: 3rem 0;
+  }
+
+  p {
+    margin-bottom: 2.7rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 600px) {
+    .top {
+      place-items: center;
+      flex-direction: column;
+
+      .left {
+        .logo {
+          margin-bottom: 0;
+        }
+      }
+
+      .right {
+        text-align: center;
+
+        .green-button {
+          margin: auto;
+          margin-bottom: 2rem;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 120%;
+          letter-spacing: -0.015em;
+          color: #ffffff;
+          margin-bottom: 1.8rem;
+          justify-content: center;
+
+          img {
+            margin-top: 4px;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    .loguinhos {
+      margin-top: 2.6rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+        height: 1rem;
+      }
+
+      .point {
+        height: 0.2rem;
+      }
+    }
+
+    .line {
+      margin: 2rem 0;
+    }
+  }
+}

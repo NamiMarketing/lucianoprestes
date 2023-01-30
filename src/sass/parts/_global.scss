@@ -1,6 +1,10 @@
-$contralto: "contralto-big", sans-serif;
-$articulat: "articulat-cf", sans-serif;
-$articulat-heavy: "articulat-heavy-cf", sans-serif;
+@import "./colors";
+$catamaran: "Catamaran", sans-serif;
+
+@font-face {
+  font-family: "Cyrene";
+  src: url("/fonts/Cyrene.otf") format("opentype");
+}
 
 strong {
   font-weight: bold;
@@ -37,20 +41,21 @@ body,
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-font-smoothing: antialised;
-  font-family: $articulat;
+  font-family: $catamaran;
 }
 
 main {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  position: relative;
 }
 
 body,
 input,
 button,
 textarea {
-  font-family: $articulat;
+  font-family: $catamaran;
 }
 
 h1,
@@ -59,11 +64,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $articulat;
+  font-family: $catamaran;
 }
 
 p {
   font-size: 1.8rem;
+  color: $cinza2;
 }
 
 h1 {
@@ -108,21 +114,92 @@ button {
 }
 
 .only-mobile {
-  display: none;
+  display: none !important;
 }
 
 @media (orientation: portrait) and (max-width: 500px) {
   .only-mobile {
-    display: block;
+    display: flex !important;
   }
 
   .only-desktop {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 1201px) {
   p {
     font-size: 1.5rem;
+  }
+}
+
+header {
+  background-color: $tema;
+  height: 7.8rem;
+  z-index: 9;
+
+  .nav {
+    background: linear-gradient(90deg, $tema -50.1%, #70c3b8 100%);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    height: 7.8rem;
+    justify-content: space-between;
+    padding: 0 10rem;
+
+    .phone {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 1rem;
+      }
+    }
+
+    p {
+      color: white;
+      font-family: "MontSerrat";
+    }
+
+    > div {
+      display: flex;
+
+      select {
+        background-color: $azulzinho;
+        color: white;
+        border: none;
+        border-radius: 1.5rem;
+        margin-left: 3rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav {
+      padding: 0 2rem;
+    }
+  }
+}
+
+select[multiple] option {
+  white-space: normal;
+  background-color: #fff;
+}
+
+optgroup {
+  background-color: #fff;
+  border: none;
+
+  option {
+    font-family: "catamaran";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    /* AZUL 02 */
+
+    color: #15527a;
+    width: 100px;
   }
 }
