@@ -70,6 +70,10 @@
       margin-top: -8rem;
       text-align: center;
       place-items: center;
+
+      h1 {
+        font-size: 3.4rem;
+      }
     }
   }
 }
@@ -411,11 +415,22 @@
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
+    margin: 0;
+
+    .green-button {
+      width: 88vw;
+      margin: auto;
+    }
 
     .title {
       margin: 0;
       text-align: center;
       padding: 2rem;
+      width: auto;
+
+      h2 {
+        margin-bottom: 2.8rem;
+      }
     }
 
     .steps {
@@ -725,21 +740,21 @@
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 88vw;
         img {
-          width: 300px;
+          width: 88vw;
           object-fit: cover;
         }
 
         p {
-          width: 300px;
+          width: 88vw;
         }
 
         .quote {
           width: auto;
           position: absolute;
-          right: -34px;
-          top: 11px;
+          right: -2px;
+          top: -5px;
         }
       }
     }
@@ -763,6 +778,14 @@
       display: none;
     }
   }
+}
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  top: 482px;
+}
+
+.swiper-scrollbar-drag {
+  background: #cfcfcf !important;
 }
 
 .perguntas {
