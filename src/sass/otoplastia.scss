@@ -62,9 +62,9 @@
     height: auto;
 
     .banner-img {
-      margin-left: 0;
-      margin-top: 3rem;
-      width: 120%;
+      margin-left: 3rem;
+      margin-top: 5rem;
+      width: 85%;
     }
     .content {
       padding: 2rem;
@@ -73,7 +73,11 @@
       place-items: center;
 
       h1 {
-        font-size: 3.4rem;
+        font-size: 2.8rem;
+      }
+
+      p {
+        font-size: 1.8rem;
       }
     }
   }
@@ -158,6 +162,12 @@
     flex-direction: column;
     height: auto;
     text-align: center;
+
+    h2 {
+      font-size: 2.4rem;
+      width: 80%;
+      line-height: 1.2;
+    }
 
     .beneficios-container {
       display: grid;
@@ -776,8 +786,18 @@
   @media screen and (max-width: 600px) {
     width: 85vw;
 
+    h2 {
+      margin: 2rem;
+    }
+
     .collapsible {
       padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .text-content {
+      padding: 1rem;
+      line-height: 1;
     }
   }
 }
