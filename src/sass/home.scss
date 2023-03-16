@@ -73,7 +73,11 @@
       place-items: center;
 
       h1 {
-        font-size: 3.4rem;
+        font-size: 2.8rem;
+      }
+
+      p {
+        font-size: 1.8rem;
       }
     }
   }
@@ -860,6 +864,12 @@
 
     .collapsible {
       padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .text-content {
+      padding: 1rem;
+      line-height: 1;
     }
   }
 }
