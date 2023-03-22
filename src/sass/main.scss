@@ -1,0 +1,690 @@
+@import "./parts/global";
+@import "./parts/colors";
+@import "./parts/buttons";
+@import "./parts/nav";
+@import "./parts/footer";
+
+.homeBanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 495px;
+  background: $grafite;
+
+  .textSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+
+    .textDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 200px;
+      gap: 20px;
+    }
+
+    h1 {
+      font-family: "Cyrene";
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: -0.015em;
+      color: $azul2;
+      width: 327px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.015em;
+      color: $azul2;
+      width: 295px;
+    }
+  }
+
+  .imageSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50vw;
+  }
+}
+
+.rinoBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+  height: 740px;
+
+  .rinoFirst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 111px;
+
+    .rinoSide {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        font-family: $catamaran;
+        font-size: 22px;
+        line-height: 36px;
+        letter-spacing: 0.15em;
+        color: black;
+      }
+
+      h2 {
+        font-family: $catamaran;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 100%;
+        color: $grafite;
+        width: 599px;
+      }
+    }
+
+    .btnSide {
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+
+      p {
+        font-family: $catamaran;
+        font-size: 24px;
+        line-height: 120%;
+        color: $grafite;
+        width: 310px;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #63A877;
+        border-radius: 2px;
+        width: 306px;
+        height: 48px;
+
+        font-family: $catamaran;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        transition: 0.2s;
+
+        &:hover {
+          background: #49835A;
+        }
+      }
+    }
+  }
+
+  .rinoSecond {
+    .rinoFlex {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+
+      .rinoItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+
+        p {
+          font-family: $catamaran;
+          font-size: 18px;
+          line-height: 140%;
+          text-align: center;
+          color: $grafite;
+          width: 194px;
+        }
+      }
+    }
+  }
+}
+
+.blefaBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+  height: 485px;
+  background: $grafite;
+
+  .blefaFirst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 111px;
+
+    .blefaSide {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        font-family: $catamaran;
+        font-size: 22px;
+        line-height: 36px;
+        letter-spacing: 0.15em;
+        color: white;
+      }
+
+      h2 {
+        font-family: $catamaran;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 100%;
+        width: 516px;
+        color: white;
+      }
+    }
+
+    .btnSide {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 27px;
+
+      p {
+        font-family: $catamaran;
+        font-size: 24px;
+        line-height: 120%;
+        color: white;
+        width: 416px;
+      }
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+
+        font-family: $catamaran;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        transition: 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.otoSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 740px;
+
+  .otoImg {
+    margin-right: -50px;
+    margin-bottom: -180px;
+  }
+
+  .otoFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-right: 80px;
+
+    p {
+      font-family: $catamaran;
+      font-size: 22px;
+      line-height: 36px;
+      letter-spacing: 0.15em;
+      color: black;
+    }
+
+    strong {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      color: $grafite;
+      width: 473px;
+    }
+
+    span {
+      font-size: 24px;
+      line-height: 120%;
+      color: $grafite;
+      width: 408px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+
+      font-family: $catamaran;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 140%;
+      text-align: center;
+      color: $grafite;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.expBanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 62px;
+  background: $grafite;
+  height: 212px;
+
+  strong {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.015em;
+    width: 444px;
+    color: $azul2;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.015em;
+    width: 460px;
+    color: $azul2;
+  }
+}
+
+.drluciano {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 575px;
+
+  .textFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 200px;
+
+    span {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $grafite;
+    }
+
+    strong {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 100%;
+      color: $grafite;
+      letter-spacing: -0.015em;
+      width: 480px;
+    }
+
+    .more {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+
+      font-family: $catamaran;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 140%;
+      text-align: center;
+      color: $grafite;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #63A877;
+      border-radius: 2px;
+      width: 306px;
+      height: 48px;
+      margin-top: 10px;
+
+      font-family: $catamaran;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transition: 0.2s;
+
+      &:hover {
+        background: #49835A;
+      }
+    }
+  }
+
+  .luciano {
+    width: 48.9vw;
+    height: 575px;
+    object-fit: cover;
+  }
+}
+
+.consultorio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 102px;
+  z-index: 3;
+
+  img {
+    width: 50vw;
+  }
+
+  .textFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+
+    span {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $grafite;
+    }
+
+    strong {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: -0.015em;
+      color: $grafite;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 120%;
+      color: $grafite;
+      width: 417px;
+    }
+  }
+}
+
+.blog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 635px;
+
+  .bg1 {
+    position: absolute;
+    top: -30%;
+    left: 0;
+  }
+
+  .bg2 {
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+  }
+
+  .textFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    span {
+      font-size: 22px;
+      line-height: 36px;
+      letter-spacing: 0.15em;
+      color: black;
+    }
+
+    strong {
+      font-size: 56px;
+      line-height: 100%;
+      color: $grafite;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 120%;
+      color: $grafite;
+      width: 581px;
+      margin: 27px 0 58px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+
+      font-family: $catamaran;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 140%;
+      text-align: center;
+      color: $grafite;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.contato {
+  background-color: #2e2f30;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .vector {
+    margin-top: 150px;
+    margin-right: -50px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    gap: 280px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+
+    strong {
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: -0.015em;
+      color: white;
+    }
+
+    .sub {
+      font-size: 24px;
+      line-height: 120%;
+      width: 331px;
+      color: white;
+      margin-bottom: 38px;
+    }
+
+    a,
+    p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: -0.015em;
+      color: #ffffff;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 1.3rem;
+      }
+    }
+  }
+
+  .map {
+    iframe {
+      margin-top: -46px;
+      z-index: 1;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .top {
+      flex-direction: column;
+
+      .content {
+        gap: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+      }
+
+      iframe {
+        margin: 0;
+      }
+    }
+  }
+}
+
+footer {
+  height: 407px;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    a, p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: -0.015em;
+      color: $grafite;
+      max-width: 23.3rem;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 1.3rem;
+      }
+    }
+  }
+
+  hr {
+    width: 80vw;
+    border: 1px solid $grafite;
+    margin-top: 2rem;
+  }
+
+  .nami {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: $grafite;
+    margin: 2.5rem;
+  }
+
+  iframe {
+    margin-top: -137px;
+    margin-bottom: -50px;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 600px) {
+    .top {
+      flex-direction: column;
+
+      .content {
+        gap: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+      }
+
+      iframe {
+        margin: 0;
+      }
+    }
+  }
+}
