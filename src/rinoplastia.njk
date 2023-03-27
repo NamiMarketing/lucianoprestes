@@ -1,52 +1,119 @@
 ---
 title: Dr. Luciano Campelo Prestes
 layout: "base.njk"
-cssPath: "/css/rinoplastia.css"
+cssPath: "/css/home.css"
 ---
 
-<section class="mainBanner">
-  <div class="textSide">
-    <h1>Rinoplastia</h1>
-    <p>O Dr Luciano preza por um resultado estético que resolva todos as imperfeições que incomodem os pacientes, garantindo, ao mesmo tempo, que se obtenha um resultado natural, sem feições de cirurgia plástica.</p>
+{% include 'nav.njk' %}
+
+<section class="initial-banner">
+  <div class="content">
+    <h1>
+      Rinoplastia: O nariz que você sempre sonhou em harmonia com o seu rosto.
+    </h1>
+    <p>
+      Corrija as imperfeições do seu nariz com naturalidade. Rápida recuperação
+      com alta no mesmo dia.
+    </p>
+
+    <a
+      class="green-button"
+      target="_blank"
+      href="https://api.whatsapp.com/send?phone=5541992591500"
+    >
+      Agendar avaliação por whatsapp
+    </a>
   </div>
-  <img src="/img/rinoplastia/mainbanner.png" alt="">
+
+  <picture>
+    <source type="image/webp" srcset="../img/banner.webp" />
+    <source type="image/png" srcset="../img/banner.png" />
+    <img class="banner-img" src="../img/banner.png" alt="Foto do paciente" />
+  </picture>
+  <img class="logo" src="../img/svg/logo.svg" alt="" />
 </section>
 
-<section class="rinoBanner">
-  <img class="folha" src="/img/rinoplastia/rinofolha.svg" alt="">
-
-  <div class="rinoTitle">
-      <h2>Benefícios da Rinoplastia</h2>
-  </div>
-  <div class="rinoSecond">
-    <div class="rinoFlex">
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon.svg" alt="">
-        <p>Anestesia local com sedação</p>
-      </div>
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon2.svg" alt="">
-        <p>Acompanhamento pós-operatório por seis meses (sem custo adicional)</p>
-      </div>
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon3.svg" alt="">
-        <p>Laser ultrassônico para corte do osso (sem uso de martelo)</p>
-      </div>
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon4.svg" alt="">
-        <p>Rápida recuperação com alta no mesmo dia</p>
-      </div>
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon5.svg" alt="">
-        <p>Sem uso de Tampões</p>
-      </div>
+<section class="beneficios">
+  <h2>Benefícios da Rinoplastia</h2>
+  <div class="beneficios-container">
+    <div class="icon">
+      <img src="../img/svg/ben1.svg" alt="" />
+      <p>Anestesia local com sedação</p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/ben2.svg" alt="" />
+      <p>Acompanhamento pós-operatório por seis meses (sem custo adicional)</p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/ben3.svg" alt="" />
+      <p>
+        Laser ultrassônico para corte e modelagem do osso (sem uso de martelo)
+      </p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/ben4.svg" alt="" />
+      <p>Sem uso de Tampões</p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/ben5.svg" alt="" />
+      <p>Rápida recuperação com alta no mesmo dia</p>
     </div>
   </div>
-  <a href="">Agendar avaliação por WhatsApp</a>
+
+  <a
+    class="green-button"
+    target="_blank"
+    href="https://api.whatsapp.com/send?phone=5541992591500"
+  >
+    Agendar avaliação por whatsapp
+  </a>
+
+  <hr />
+
+  <img class="folha-esquerda" src="../img//svg/folha-esquerda.svg" alt="" />
+  <img class="folha-direita" src="../img//svg/folha-direita.svg" alt="" />
+</section>
+
+<section class="diferenciais">
+  <h2>Diferenciais Dr. Luciano</h2>
+  <div class="beneficios-container">
+    <div class="icon">
+      <img src="../img/svg/dif1.svg" alt="" />
+      <p>Foco no resultado harmonioso e natural</p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/dif2.svg" alt="" />
+      <p>Simulação com resultado cirúrgico</p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/dif3.svg" alt="" />
+      <p>Médico cirurgião com mais de 15 anos de experiência</p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/dif4.svg" alt="" />
+      <p>Consulta online e presencial</p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/dif5.svg" alt="" />
+      <p>Cirurgia combinada de otoplastia blefaroplastia ou septoplastia</p>
+    </div>
+    <div class="icon">
+      <img src="../img/svg/dif6.svg" alt="" />
+      <p>Cirurgia aberta ou fechada</p>
+    </div>
+  </div>
+
+  <a
+    class="green-button"
+    target="_blank"
+    href="https://api.whatsapp.com/send?phone=5541992591500"
+  >
+    Agendar avaliação por whatsapp
+  </a>
 </section>
 
 <section class="rinoplastia">
-  <strong>Quando fazer uma rinoplastia?</strong>
+  <h2>Quando fazer uma rinoplastia?</h2>
   <p>
     Este é um procedimento que pode ser realizado para resolver diversas queixas
     e mudanças no nariz, como:
@@ -54,20 +121,21 @@ cssPath: "/css/rinoplastia.css"
 
   <div class="card-container">
     <div class="card">
-      <img src="/img/rectangle-bordered.png" alt="" />
+      <img src="../img/rectangle-bordered.png" alt="" />
       <p>Ponta caída ou grossa</p>
     </div>
     <div class="card">
-      <img src="/img/rectangle-bordered.png" alt="" />
+      <img src="../img/rectangle-bordered.png" alt="" />
       <p>Abertura nasal alargada</p>
     </div>
     <div class="card">
-      <img src="/img/rectangle-bordered.png" alt="" />
+      <img src="../img/rectangle-bordered.png" alt="" />
       <p>Nariz torto, ou grande</p>
     </div>
   </div>
 
   <a
+    class="green-button"
     target="_blank"
     href="https://api.whatsapp.com/send?phone=5541992591500"
   >
@@ -90,46 +158,53 @@ cssPath: "/css/rinoplastia.css"
 
   <div class="steps">
     <div class="step">
-      <img src="./../img/svg/dot.svg" alt="" />
+      <img src="../img/svg/dot.svg" alt="" />
       <h4>Consulta online e presencial</h4>
       <p>
-        O Dr. Luciano examinará sua região nasal e compreenda seus objetivos.
+        O Dr. Luciano examinará o seu nariz para compreender os seus objetivos.
       </p>
     </div>
 
     <div class="step">
-      <img src="./../img/svg/dot.svg" alt="" />
+      <img src="../img/svg/dot.svg" alt="" />
       <h4>Simulador de resultado cirúrgico</h4>
       <p>
-        O programa permite ao Dr. Luciano compreender a insatisfação estética do paciente, para que juntos realizem um esboço do que será feito no procedimento.
+        O programa permite ao Dr. Luciano compreender a insatisfação estética do
+        paciente, para que juntos realizem um esboço do que será feito no
+        procedimento.
       </p>
     </div>
 
     <div class="step">
-      <img src="./../img/svg/dot.svg" alt="" />
-      <h4>Agendamento da consulta</h4>
+      <img src="../img/svg/dot.svg" alt="" />
+      <h4>Agendamento da cirurgia</h4>
       <p>
-        O paciente deverá comparecer ao local pelo menos 1 hora antes do horário programado para assinar os documentos necessários e ser preparado para o procedimento.
+        O paciente deverá comparecer ao local pelo menos 1 hora antes do horário
+        programado para assinar os documentos necessários e ser preparado para o
+        procedimento.
       </p>
     </div>
 
     <div class="step">
-      <img src="./../img/svg/dot.svg" alt="" />
+      <img src="../img/svg/dot.svg" alt="" />
       <h4>Procedimento</h4>
       <p>
-        A cirurgia levará em torno de 1 hora e o paciente receberá alta no mesmo dia.
+        A cirurgia levará em torno de 1 hora e o paciente receberá alta no mesmo
+        dia.
       </p>
     </div>
 
     <div class="step">
-      <img src="./../img/svg/dot.svg" alt="" />
+      <img src="../img/svg/dot.svg" alt="" />
       <h4>Recuperação</h4>
       <p>
-        O paciente utiliza curativo por sete dias e geralmente tem edemas e inchaço.
+        O paciente utiliza curativo por sete dias e geralmente tem pouco edema e
+        inchaço.
       </p>
     </div>
+
     <div class="step" style="padding-bottom: 0">
-      <img src="./../img/svg/dot.svg" alt="" />
+      <img src="../img/svg/dot.svg" alt="" />
       <h4>Cuidados pós-cirúrgicos</h4>
       <p>
         Cumprir orientações de cuidado pós cirurgia e comparecer as consultas.
@@ -137,7 +212,7 @@ cssPath: "/css/rinoplastia.css"
     </div>
   </div>
 
-  <img src="./../img/svg/leaf-left.svg" alt="" class="leaf-left" />
+  <img src="../img/svg/leaf-left.svg" alt="" class="leaf-left" />
 
   <a
     class="green-button only-mobile"
@@ -147,7 +222,7 @@ cssPath: "/css/rinoplastia.css"
   </a>
 </section>
 
-<div class="line"></div>
+<hr class="separator" />
 
 <section class="procedimentos">
   <div class="titleSide">
@@ -161,3 +236,50 @@ cssPath: "/css/rinoplastia.css"
 </section>
 
 {% include 'footer.njk' %}
+
+<script>
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: "1",
+    spaceBetween: 50,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var el = this.children;
+      if (this.classList[1]) {
+        el[0].innerText = "-";
+      } else {
+        el[0].innerText = "+";
+      }
+
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>

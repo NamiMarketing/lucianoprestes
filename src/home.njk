@@ -4,16 +4,18 @@ layout: "base.njk"
 cssPath: "/css/main.css"
 ---
 
-<section class="homeBanner">
-  <div class="textSide">
-    <div class="textDiv">
-      <h1>Resultados harmônicos e naturais</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
+{% include 'nav.njk' %}
+
+<section class="initial-banner">
+  <div class="content">
+    <h1>Resultados harmônicos e naturais</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
-  <div class="imageSide">
-    <img src="/img/main/mainbanner.png" alt="">
-  </div>
+
+  <picture>
+    <source type="image/png" srcset="/img/main/mainbanner.png" />
+    <img class="banner-img" src="/img/main/mainbanner.png" alt="" />
+  </picture>
 </section>
 
 <section class="rinoBanner">
@@ -30,23 +32,25 @@ cssPath: "/css/main.css"
   <div class="rinoSecond">
     <div class="rinoFlex">
       <div class="rinoItem">
-        <img src="/img/main/rinoicon.svg" alt="">
+        <img src="/img/main/rinoicon.svg" alt="" />
         <p>Anestesia local com sedação</p>
       </div>
       <div class="rinoItem">
-        <img src="/img/main/rinoicon2.svg" alt="">
-        <p>Acompanhamento pós-operatório por seis meses (sem custo adicional)</p>
+        <img src="/img/main/rinoicon2.svg" alt="" />
+        <p>
+          Acompanhamento pós-operatório por seis meses (sem custo adicional)
+        </p>
       </div>
       <div class="rinoItem">
-        <img src="/img/main/rinoicon3.svg" alt="">
+        <img src="/img/main/rinoicon3.svg" alt="" />
         <p>Laser ultrassônico para corte do osso (sem uso de martelo)</p>
       </div>
       <div class="rinoItem">
-        <img src="/img/main/rinoicon4.svg" alt="">
+        <img src="/img/main/rinoicon4.svg" alt="" />
         <p>Rápida recuperação com alta no mesmo dia</p>
       </div>
       <div class="rinoItem">
-        <img src="/img/main/rinoicon5.svg" alt="">
+        <img src="/img/main/rinoicon5.svg" alt="" />
         <p>Sem uso de Tampões</p>
       </div>
     </div>
@@ -60,57 +64,78 @@ cssPath: "/css/main.css"
       <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
     </div>
     <div class="btnSide">
-      <p>velit tincidunt mollis et id urna. Nam tincidunt orci tellus, sed pharetra quam semper a. Maecenas et luctus justo. In at quam at leo porta blandit in in purus</p>
-      <a href=""><img src="/img/main/plus.svg" alt="">Saiba mais sobre a blefaroplastia</a>
+      <p>
+        velit tincidunt mollis et id urna. Nam tincidunt orci tellus, sed
+        pharetra quam semper a. Maecenas et luctus justo. In at quam at leo
+        porta blandit in in purus
+      </p>
+      <a href=""
+        ><img src="/img/main/plus.svg" alt="" />Saiba mais sobre a
+        blefaroplastia</a
+      >
     </div>
   </div>
 </section>
 
 <section class="otoSection">
-  <img class="otoImg" src="/img/main/otobanner.png" alt="">
+  <img class="otoImg" src="/img/main/otobanner.png" alt="" />
   <div class="otoFlex">
     <p>OTOPLASTIA</p>
-    <strong>A otoplastia é a cirurgia que corrige esteticamente as orelhas de abano</strong>
+    <strong
+      >A otoplastia é a cirurgia que corrige esteticamente as orelhas de
+      abano</strong
+    >
     <span>
-      O procedimento pode ajudar na recuperação da autoestima e é realizado com anestesia local e sedação.
+      O procedimento pode ajudar na recuperação da autoestima e é realizado com
+      anestesia local e sedação.
     </span>
-    <a href=""><img src="/img/main/plus2.svg" alt="">Saiba mais sobre a Otoplastia</a>
+    <a href=""
+      ><img src="/img/main/plus2.svg" alt="" />Saiba mais sobre a Otoplastia</a
+    >
   </div>
 </section>
 
 <section class="expBanner">
   <strong>Mais de 15 anos de experiência em rinoplastia</strong>
-  <p>O Dr. Luciano tem muito amor à sua profissão e dedica-se com afinco para a satisfação de seus pacientes.</p>
+  <p>
+    O Dr. Luciano tem muito amor à sua profissão e dedica-se com afinco para a
+    satisfação de seus pacientes.
+  </p>
 </section>
 
 <section class="drluciano">
   <div class="textFlex">
     <span>Dr. Luciano Prestes</span>
-    <strong>Acredito que cirurgias plásticas ajudam pessoas a recuperarem sua autoestima e qualidade de vida.</strong>
-    <a class="more" href=""><img src="/img/main/plus2.svg" alt="">Conheça o Dr. Luciano Prestes</a>
+    <strong
+      >Acredito que cirurgias plásticas ajudam pessoas a recuperarem sua
+      autoestima e qualidade de vida.</strong
+    >
+    <a class="more" href=""
+      ><img src="/img/main/plus2.svg" alt="" />Conheça o Dr. Luciano Prestes</a
+    >
     <a class="btn" href="">Agende sua consulta</a>
   </div>
-  <img class="luciano" src="/img/main/luciano.jpg" alt="">
+  <img class="luciano" src="/img/main/luciano.jpg" alt="" />
 </section>
 
 <section class="consultorio">
   <div class="slide">
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img src="/img/main/office.jpg" style="width:50vw">
+        <img src="/img/main/office.jpg" style="width: 50vw" />
       </div>
-    
+
       <div class="mySlides fade">
-        <img src="/img/main/office2.jpg" style="width:50vw">
+        <img src="/img/main/office2.jpg" style="width: 50vw" />
       </div>
-  
+
       <div class="mySlides fade">
-        <img src="/img/main/office3.jpg" style="width:50vw">
+        <img src="/img/main/office3.jpg" style="width: 50vw" />
       </div>
     </div>
-    <br>
-    
-    <div class="dots" style="text-align:center">
+    <br />
+
+    <div class="dots" style="text-align: center">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
@@ -120,113 +145,64 @@ cssPath: "/css/main.css"
   <div class="textFlex">
     <span>CONSULTÓRIO</span>
     <strong>Estrutura para te atender</strong>
-    <p>Para cuidar da saúde dos meus pacientes, conto com uma estrutura completa no IPO - Instituto Paranaense de Otorrinolaringologia.</p>
-    <p>Um consultório preparado para prestar o atendimento completo, desde a avaliação, até a cirurgia e o pós-operatório.</p>
+    <p>
+      Para cuidar da saúde dos meus pacientes, conto com uma estrutura completa
+      no IPO - Instituto Paranaense de Otorrinolaringologia.
+    </p>
+    <p>
+      Um consultório preparado para prestar o atendimento completo, desde a
+      avaliação, até a cirurgia e o pós-operatório.
+    </p>
   </div>
 </section>
 
 <section class="blog">
-  <img class="bg1" src="/img/main/maskbg.svg" alt="">
-  <img class="bg2" src="/img/main/maskbg2.svg" alt="">
+  <img class="bg1" src="/img/main/maskbg.svg" alt="" />
+  <img class="bg2" src="/img/main/maskbg2.svg" alt="" />
   <div class="textFlex">
     <span>BLOG</span>
     <strong>Fique por dentro</strong>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis elit non velit tincidunt mollis et id urna</p>
-    <a href=""><img src="/img/main/plus2.svg" alt="">Visite nosso blog</a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis
+      elit non velit tincidunt mollis et id urna
+    </p>
+    <a href=""><img src="/img/main/plus2.svg" alt="" />Visite nosso blog</a>
   </div>
 </section>
 
-<section class="contato">
-  <img class="vector" src="/img/main/vectorcontato.svg" alt="">
-  <div class="top">
-    <div class="content">
-      <strong>Contato</strong>
-      <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="icon">
-        <img src="/img/svg/tel.svg" alt="" />
-        <a href="tel:4133141500">41 3314 - 1500</a>
-      </div>
-      <div class="icon">
-        <img src="/img/svg/whats.svg" alt="" />
-        <a
-          href="https://api.whatsapp.com/send?phone=5541992591500"
-          target="_blank"
-          >41 9 9259 - 1500</a
-        >
-      </div>
-
-      <p>Av. Rep. Argentina, 2069<br>Água Verde | Curtiba, PR</p>
-    </div>
-
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.2050678147702!2d-49.29278798471778!3d-25.4648270837725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce37b130258b9%3A0xb0b13d7fa49f192f!2sAv.%20Rep.%20Argentina%2C%202069%20-%20%C3%81gua%20Verde%2C%20Curitiba%20-%20PR%2C%2080620-010!5e0!3m2!1spt-BR!2sbr!4v1674616336395!5m2!1spt-BR!2sbr"
-        width="536"
-        height="550"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="top">
-    <img src="/img/main/logo.svg" alt="" />
-
-    <div class="content">
-      <div class="icon">
-        <img src="/img/svg/phone.svg" alt="" />
-        <a href="tel:4133141500">41 3314 - 1500</a>
-      </div>
-      <div class="icon">
-        <img src="/img/svg/whatsapp.svg" alt="" />
-        <a
-          href="https://api.whatsapp.com/send?phone=5541992591500"
-          target="_blank"
-          >41 9 9259 - 1500</a
-        >
-      </div>
-      <p>Av. Rep. Argentina, 2069 Água Verde | Curtiba, PR</p>
-    </div>
-  </div>
-
-  <hr />
-
-  <a href="https://namiconsultoria.com.br" class="nami"
-    >Desenvolvido por Nami Consultoria</a
-  >
-</footer>
+{% include 'footer.njk' %}
 
 <script>
   let slideIndex = 1;
-showSlides(slideIndex);
+  showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
 </script>

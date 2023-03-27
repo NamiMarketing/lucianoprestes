@@ -4,8 +4,10 @@ layout: "base.njk"
 cssPath: "/css/cirurgias.css"
 ---
 
-<section class="menu">
-  <img class="folha1" src="/img/svg/cirfolha.svg">
+{% include 'nav.njk' %}
+
+<section class="menu-container">
+  <img class="folha1" src="/img/svg/cirfolha.svg" />
   <div class="menuFlex">
     <strong>Cirurgias</strong>
     <div class="menuBtn">
@@ -13,7 +15,7 @@ cssPath: "/css/cirurgias.css"
       <a href="">Plásticas</a>
     </div>
   </div>
-  <img class="folha2" src="/img/svg/cirfolha2.svg">
+  <img class="folha2" src="/img/svg/cirfolha2.svg" />
 </section>
 
 {% include 'footer.njk' %}

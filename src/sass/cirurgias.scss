@@ -4,7 +4,7 @@
 @import "./parts/nav";
 @import "./parts/footer";
 
-.menu {
+.menu-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@
         line-height: 100%;
         text-align: center;
         letter-spacing: -0.015em;
-        color: #FFFFFF;
+        color: #ffffff;
 
         width: 408px;
         height: 202px;
