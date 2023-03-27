@@ -1,0 +1,409 @@
+@import "./parts/global";
+@import "./parts/colors";
+@import "./parts/buttons";
+@import "./parts/nav";
+@import "./parts/footer";
+
+.mainBanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 603px;
+  background: $grafite;
+
+  .textSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: -0.015em;
+      color: $azul2;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 120%;
+      color: #FFFFFF;
+      width: 403px;
+    }
+  }
+}
+
+.rinoBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 622px;
+  position: relative;
+
+  .folha {
+    position: absolute;
+    bottom: -51px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .rinoTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 66px;
+      letter-spacing: 0.05em;
+      color: #000000;
+    }
+  }
+
+  .rinoSecond {
+    .rinoFlex {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+
+      .rinoItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+
+        p {
+          font-family: $catamaran;
+          font-size: 18px;
+          line-height: 140%;
+          text-align: center;
+          color: $grafite;
+          width: 194px;
+        }
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #63A877;
+    border-radius: 2px;
+    width: 306px;
+    height: 48px;
+
+    font-family: $catamaran;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.2s;
+
+    &:hover {
+      background: #49835A;
+    }
+  }
+}
+
+.rinoplastia {
+  background: #2e2f30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  z-index: 5;
+  padding-bottom: 7.8rem;
+
+  strong {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    margin-top: 10.7rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    width: 574px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 1.9rem;
+    margin-bottom: 4.4rem;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 6.7rem;
+    margin-bottom: 6.7rem;
+
+    .card {
+      position: relative;
+
+      img {
+        position: absolute;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        /* or 24px */
+
+        text-align: center;
+        letter-spacing: -0.015em;
+
+        color: #ffffff;
+        width: 15rem;
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #63A877;
+    border-radius: 2px;
+    width: 306px;
+    height: 48px;
+
+    font-family: $catamaran;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.2s;
+
+    &:hover {
+      background: #49835A;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    p {
+      width: 90vw;
+    }
+    .card-container {
+      flex-direction: column;
+    }
+  }
+}
+
+.procedimento {
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+  padding-top: 8.8rem;
+  padding-bottom: 10.8rem;
+  padding-left: 15rem;
+  position: relative;
+
+  .title {
+    margin-top: 13.1rem;
+    margin-right: 6.3rem;
+    width: 39.2rem;
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 100%;
+      /* or 20px */
+
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      /* Azul Escuro */
+
+      color: #2e2f30;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 100%;
+      /* or 32px */
+
+      letter-spacing: -0.015em;
+
+      /* Grafite */
+
+      color: #2e2f30;
+      margin-top: 1.6rem;
+      margin-bottom: 5.8rem;
+    }
+  }
+
+  .steps {
+    width: 36.1rem;
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #d9d9d9;
+      position: relative;
+      padding-left: 3.1rem;
+      padding-bottom: 3.4rem;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: -6px;
+      }
+
+      h4 {
+        margin-top: -1rem;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 120%;
+        color: $grafite;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 120%;
+        color: $grafite;
+      }
+
+      &:last-child {
+        border-left: unset;
+      }
+    }
+  }
+
+  .leaf-left {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin: 0;
+
+    .green-button {
+      width: 88vw;
+      margin: auto;
+    }
+
+    .title {
+      margin: 0;
+      text-align: center;
+      padding: 2rem;
+      width: auto;
+
+      h2 {
+        margin-bottom: 2.8rem;
+      }
+    }
+
+    .steps {
+      margin-left: 3rem;
+      padding-left: 2.1rem;
+      padding-bottom: 3.4rem;
+      max-width: 75vw;
+    }
+
+    .leaf-left {
+      position: absolute;
+      top: 0%;
+      left: 0;
+      width: 40%;
+    }
+  }
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #e3e3e3;
+  width: 80vw;
+}
+
+.procedimentos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 105px;
+  height: 468px;
+
+  .titleSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 46px;
+
+    strong {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: #000000;
+      width: 408px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 100%;
+      color: $grafite;
+      width: 409px;
+    }
+  }
+
+  .btnSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 43px;
+
+    p {
+      font-size: 20px;
+      line-height: 120%;
+      color: $grafite;
+      width: 306px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+
+      font-family: $catamaran;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 140%;
+      text-align: center;
+      color: $grafite;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
