@@ -1,162 +1,86 @@
 @import "colors";
 
 footer {
-  background-color: #15527a;
+  background-color: #2e2f30;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  place-items: center;
+  align-items: center;
 
   .top {
     display: flex;
-    padding-top: 9.6rem;
+    justify-content: center;
+    height: 363px;
+    align-items: center;
     justify-content: space-between;
     width: 80vw;
+  }
 
-    .left {
-      .logo {
-        margin-bottom: 5.5rem;
-      }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
 
-      a {
-        display: flex;
-        align-items: center;
-        font-weight: 600;
-        font-size: 1.8rem;
-        line-height: 120%;
-        letter-spacing: -0.015em;
-        color: #ffffff;
-        margin-bottom: 1.8rem;
-        margin-left: 2rem;
+    a,
+    p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      /* or 26px */
 
-        img {
-          margin-top: 4px;
-          margin-right: 1rem;
-        }
-      }
+      letter-spacing: -0.015em;
 
-      > div {
-        display: flex;
-        align-items: center;
-
-        a {
-          margin-bottom: 0;
-        }
-
-        img + a {
-          margin-left: 0;
-        }
-
-        .point {
-          margin-right: 1rem;
-          margin-top: 6px;
-        }
-      }
+      color: #ffffff;
+      max-width: 23.3rem;
     }
 
-    .right {
+    .icon {
       display: flex;
-      flex-direction: column;
-      margin-top: 3rem;
+      align-items: center;
 
-      p {
-        font-weight: 700;
-        font-size: 1.8re;
-        line-height: 140%;
-        letter-spacing: -0.015em;
-        color: #ffffff;
-        margin-bottom: 0.4rem;
-        font-family: "montserrat";
-      }
-
-      .green-button {
-        font-weight: 700;
-        font-size: 1.4rem;
-        line-height: 120%;
-        text-align: center;
-        letter-spacing: -0.015em;
-        color: #15527a;
-        width: 18.3rem;
-        height: 2.8rem;
-        margin-bottom: 2rem;
-        font-family: "MontSerrat";
-
-        img {
-          margin-right: 1rem;
-        }
+      img {
+        margin-right: 1.3rem;
       }
     }
   }
 
-  .line {
-    border: 1px solid #ffffff;
+  hr {
     width: 80vw;
-    margin: 3rem 0;
+    border: 1px solid #ffffff;
+    margin-top: 2rem;
   }
 
-  p {
-    margin-bottom: 2.7rem;
-    font-weight: 500;
-    font-size: 1.4rem;
+  .nami {
+    font-weight: 300;
+    font-size: 12px;
     line-height: 20px;
+    text-align: center;
     color: #ffffff;
+    margin: 2.5rem;
+  }
+
+  iframe {
+    margin-top: -137px;
+    margin-bottom: -50px;
+    z-index: 1;
   }
 
   @media screen and (max-width: 600px) {
     .top {
-      place-items: center;
       flex-direction: column;
+      padding: 5rem;
+      height: auto;
 
-      .left {
-        .logo {
-          margin-bottom: 0;
-        }
+      .content {
+        gap: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
       }
 
-      .right {
-        text-align: center;
-
-        .green-button {
-          margin: auto;
-          margin-bottom: 2rem;
-        }
-
-        a {
-          display: flex;
-          align-items: center;
-          font-weight: 600;
-          font-size: 1.6rem;
-          line-height: 120%;
-          letter-spacing: -0.015em;
-          color: #ffffff;
-          margin-bottom: 1.8rem;
-          justify-content: center;
-
-          img {
-            margin-top: 4px;
-            margin-right: 1rem;
-          }
-        }
+      iframe {
+        margin-top: 4rem;
       }
-    }
-
-    .loguinhos {
-      margin-top: 2.6rem;
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-
-      img {
-        height: 1rem;
-      }
-
-      .point {
-        height: 0.2rem;
-      }
-    }
-
-    .line {
-      margin: 2rem 0;
     }
   }
 }
