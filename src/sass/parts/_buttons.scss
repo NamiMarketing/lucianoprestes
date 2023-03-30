@@ -2,24 +2,27 @@
 
 .green-button {
   border: none;
-  color: $white;
-  transition: filter 0.2s;
-  font-weight: 700;
-  font-size: 1.6rem;
-  text-align: center;
-  letter-spacing: -0.015em;
-  text-transform: uppercase;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  z-index: 999;
+  background: #63A877;
+  border-radius: 2px;
   width: 306px;
   height: 48px;
-  background: #74c28a;
-  border-radius: 2px;
+
+  font-family: $catamaran;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: 0.2s;
 
   &:hover {
-    filter: brightness(0.8);
+    background: #49835A;
   }
 
   @media screen and (max-width: 600px) {

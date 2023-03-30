@@ -4,3 +4,4 @@ yarn*
 /public
 src/css/build
 .DS_Store
+/src/css

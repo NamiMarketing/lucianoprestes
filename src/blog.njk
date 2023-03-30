@@ -1,0 +1,104 @@
+---
+title: Blog
+layout: "base.njk"
+cssPath: "../css/blog.css"
+pagination:
+  data: collections.post
+  size: 9
+---
+
+{% include 'nav.njk' %}
+
+<div class="blog-container">
+  <div class="top-blog">
+    {%- for item in pagination.items | reverse -%} {% if loop.index == 1 %}
+    <a href="{{ item.url }}" class="first-blog">
+      <section>
+        <img src="{{ item.data.thumbnail }}" alt="" />
+        <div>
+          <h3>{{ item.data.title }}</h3>
+          <div class="bottom">
+            <!-- <div class="tag-container">
+              <p>
+                {% for tag in item.data.tags -%} {% if tag !== 'post' %}
+                {{ tag }}
+                {% if loop.index !== item.data.tags.length %}| {% endif %} {%
+                endif %} {%- endfor %}
+              </p>
+            </div> -->
+
+            <!-- <p class="blogData">{{ item.data.date | postDate }}</p> -->
+          </div>
+        </div>
+      </section>
+    </a>
+
+    <div class="right">
+      {% else %} {% if loop.index == 2 %}
+      <a href="{{ item.url }}">
+        <section class="second-blog">
+          <img src="{{ item.data.thumbnail }}" alt="" />
+          <div>
+            <h3>{{ item.data.title }}</h3>
+
+            <div class="bottom">
+              <!-- <div class="tag-container">
+                <p>
+                  {% for tag in item.data.tags -%} {% if tag !== 'post' %}
+                  {{ tag }}
+                  {% if loop.index !== item.data.tags.length %}| {% endif %} {%
+                  endif %} {%- endfor %}
+                </p>
+              </div> -->
+
+              <!-- <p class="blogData">{{ item.data.date | postDate }}</p> -->
+            </div>
+          </div>
+        </section>
+      </a>
+
+      {% else %} {% if loop.index == 3 %}
+      <a href="{{ item.url }}">
+        <section class="second-blog">
+          <img src="{{ item.data.thumbnail }}" alt="" />
+          <div>
+            <h3>{{ item.data.title }}</h3>
+
+            <div class="bottom">
+              <!-- <div class="tag-container">
+                <p>
+                  {% for tag in item.data.tags -%} {% if tag !== 'post' %}
+                  {{ tag }}
+                  {% if loop.index !== item.data.tags.length %}| {% endif %} {%
+                  endif %} {%- endfor %}
+                </p>
+              </div> -->
+
+              <!-- <p class="blogData">{{ item.data.date | postDate }}</p> -->
+            </div>
+          </div>
+        </section>
+      </a>
+    </div>
+  </div>
+
+  <div class="post-container">
+    {% else %}
+    <a href="{{ item.url }}" class="card">
+      <section>
+        <img src="{{ item.data.thumbnail }}" alt="" />
+
+        <div>
+          <h3>{{ item.data.title }}</h3>
+
+          <div class="bottom">
+            <p class="blogData">{{ item.data.date | postDate }}</p>
+          </div>
+        </div>
+      </section>
+    </a>
+    {% endif %} {% endif %}{% endif %} {%- endfor %}
+  </div>
+</div>
+
+{% include 'footer.njk' %}

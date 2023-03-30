@@ -12,13 +12,13 @@
   width: 100vw;
   align-items: center;
   height: 100%;
-  height: 63.4rem;
+  height: 64vh;
   overflow: hidden;
   background: #2e2f30;
 
   .content {
     z-index: 4;
-    height: 63.4rem;
+    height: 64vh;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -26,7 +26,6 @@
     padding-left: 10%;
 
     h1 {
-      font-family: "Cyrene";
       font-style: normal;
       font-weight: 400;
       font-size: 56px;
@@ -73,11 +72,12 @@
       place-items: center;
 
       h1 {
-        font-size: 2.8rem;
+        font-size: 4rem;
       }
 
       p {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        width: 302px;
       }
     }
   }
@@ -164,6 +164,10 @@
 
     h2 {
       margin-top: 5.3rem;
+      letter-spacing: 0.05em;
+      font-size: 3.2rem;
+      width: 267px;
+      line-height: 120%;
     }
 
     .beneficios-container {
@@ -346,6 +350,8 @@
     }
     .card-container {
       flex-direction: column;
+      gap: unset;
+      margin-bottom: 4rem;
     }
   }
 }
@@ -413,6 +419,10 @@
       h4 {
         margin-top: -1rem;
       }
+
+      p {
+        color: $grafite;
+      }
     }
   }
 
@@ -423,6 +433,7 @@
   }
 
   @media screen and (max-width: 600px) {
+    padding-bottom: 7rem;
     flex-direction: column;
     margin: 0;
 
@@ -446,7 +457,7 @@
       margin-left: 3rem;
       padding-left: 2.1rem;
       padding-bottom: 3.4rem;
-      max-width: 75vw;
+      max-width: 76vw;
     }
 
     .leaf-left {
@@ -454,6 +465,10 @@
       top: 0%;
       left: 0;
       width: 40%;
+    }
+
+    .separator {
+      width: 80vw;
     }
   }
 }
@@ -883,76 +898,77 @@
   }
 }
 
-footer {
-  background-color: #2e2f30;
+.procedimentos {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 60vw;
+  place-items: center;
+  margin: auto;
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-    margin-top: auto;
+  .titleSide {
+    strong {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      /* or 40px */
 
-    a,
-    p {
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 120%;
-      /* or 26px */
+      letter-spacing: 0.05em;
 
-      letter-spacing: -0.015em;
-
-      color: #ffffff;
-      max-width: 23.3rem;
+      color: #000000;
     }
 
-    .icon {
+    p {
+      margin-top: 4rem;
+    }
+  }
+
+  .btnSide {
+    p {
+      margin-bottom: 4rem;
+    }
+
+    a {
       display: flex;
       align-items: center;
+      text-decoration: none;
+      color: $grafite;
+      font-weight: 600;
 
       img {
-        margin-right: 1.3rem;
+        margin-right: 1rem;
       }
     }
-  }
-
-  hr {
-    width: 80vw;
-    border: 1px solid #ffffff;
-    margin-top: 2rem;
-  }
-
-  .nami {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    color: #ffffff;
-    margin: 2.5rem;
-  }
-
-  iframe {
-    margin-top: -137px;
-    margin-bottom: -50px;
-    z-index: 1;
   }
 
   @media screen and (max-width: 600px) {
-    .top {
+    flex-direction: column;
+    width: 90vw;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+
+    .titleSide {
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
 
-      .content {
-        gap: 1.4rem;
-        align-items: center;
-        justify-content: center;
-        margin-top: 4rem;
+      p {
+        color: $grafite;
+        width: 306px;
       }
+    }
 
-      iframe {
-        margin: 0;
+    .btnSide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      text-align: center;
+
+      p {
+        color: $grafite;
+        width: 306px;
       }
     }
   }
