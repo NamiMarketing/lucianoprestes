@@ -1,0 +1,58 @@
+---
+title: Blog
+layout: "base.njk"
+cssPath: "/css/article.css"
+---
+
+{% include 'nav.njk' %}
+
+<article>
+  <a href="/blog" class="back-button">Voltar</a>
+  <section class="info-container">
+    <img class="thumbnail" src={{thumbnail}} alt="">
+
+    <div class="tag-container"> 
+      {% for tag in tags -%} {% if tag !== 'post' %}
+      <div class="tag">
+        <p>{{ tag }} </p> 
+      </div> {% endif %} {%- endfor %}
+      <p>{{ date | postDate }}</p>
+   </div>
+
+   <h3>{{ title }}</h3>
+
+
+  <div class="content-container">
+    {{ content | safe }}
+  </div>
+</article>
+
+<section class="other-posts only-desktop">
+  <h2>Outros Posts</h2>
+
+  <div class="artigos-relacionados">
+    <ul>
+      {%- for post in collections.post |getRandom(page, 3)  -%}
+      <a href="{{ post.url }}" 
+        <li>
+          <picture>
+            <source type="image/webp" srcset="{{ post.data.thumbnail }}">
+            <source type="image/jpeg" srcset="{{ post.data.thumbnail }}">
+            <img
+            class="banner-img"
+            src="{{ post.data.thumbnail }}"
+            alt="Cachorro dentro do avião"
+          />
+  
+          <h4>
+            {{ post.data.title }}
+          </h4>
+          <p>{{ post.data.subtitle }}</p>
+        </li>
+      </a>
+     {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include 'footer.njk' %}
