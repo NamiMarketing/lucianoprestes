@@ -58,17 +58,24 @@
   @media screen and (max-width: 600px) {
     flex-direction: column;
     height: auto;
-    padding: 4rem 0;
+    padding: 8rem 0;
 
     .textSide {
       margin: auto;
+      align-items: center;
+
+      p {
+        font-size: 22px;
+        text-align: center;
+        width: 85vw;
+      }
     }
 
     .vector {
       left: 0;
-      bottom: 13px;
       width: 29%;
-      top: 0;
+      top: 200px;
+      z-index: 5;
     }
 
     .imgSide {
@@ -144,6 +151,29 @@
       color: $grafite;
       width: 506px;
     }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #c5c5c5;
+      border-radius: 2px;
+      width: 306px;
+      height: 48px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffffff;
+      transition: 0.2s;
+
+      &:hover {
+        background: #adadad;
+      }
+    }
   }
 
   .vector {
@@ -153,12 +183,20 @@
   }
 
   @media screen and (max-width: 600px) {
+    gap: 5rem;
     flex-direction: column;
     height: auto;
-    padding: 4rem 0;
+    padding: 8rem 0;
 
     .btnSide {
       text-align: center;
+      align-items: center;
+
+      p {
+        font-size: 28px;
+        width: 70vw;
+      }
+
       a {
         z-index: 3;
         margin: auto;
@@ -166,6 +204,9 @@
     }
 
     .textSide {
+      text-align: center;
+      align-items: center;
+
       p {
         max-width: 80vw;
       }
@@ -179,9 +220,10 @@
   align-items: center;
   border-top: 1px solid #e3e3e3;
   width: 80vw;
+  margin: 0 auto;
 }
 
-.doutor {
+#doutor {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -253,6 +295,7 @@
   }
 
   @media screen and (max-width: 600px) {
+    gap: 3.6rem;
     flex-direction: column;
     padding: 2rem;
     margin-top: 4rem;
@@ -266,8 +309,18 @@
       }
     }
 
+    .right {
+      width: 75vw;
+
+      h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+    }
+
     .steps {
-      width: 90vw;
+      width: 75vw;
     }
   }
 }
@@ -332,8 +385,12 @@
     flex-direction: column;
     height: auto;
     padding-top: 4rem;
+    padding-bottom: 4rem;
 
     .title {
+      text-align: center;
+      flex-direction: column;
+
       strong {
         width: 60vw;
       }

@@ -6,7 +6,75 @@ cssPath: "/css/cirurgias-funcionais.css"
 
 {% include 'nav.njk' %}
 
-<section class="desvio">
+<section class="titleContainer">
+  <img class="folha1" src="/img/svg/leaf-left-plasticas.svg" />
+  <h1>Cirurgias Funcionais</h1>
+</section>
+
+<section class="nav">
+  <div class="btnDiv">
+    <button
+      onclick="pickTab('desvio')"
+      id="desvioButton"
+      class="active"
+    >
+      Desvio
+    </button>
+    <button
+      onclick="pickTab('amigdala')"
+      id="amigdalaButton"
+      class=""
+    >
+      Amigdalectomia
+    </button>
+    <button
+      onclick="pickTab('reducao')"
+      id="reducaoButton"
+      class=""
+    >
+      Fratura nasal
+    </button>
+    <button
+      onclick="pickTab('tubinectomia')"
+      id="tubinectomiaButton"
+      class=""
+    >
+      Tubinectomia
+    </button>
+    <button
+      onclick="pickTab('uvulo')"
+      id="uvuloButton"
+      class=""
+    >
+      Uvulopalatofaringoplastia <br />
+      Ronco
+    </button>
+    <button
+      onclick="pickTab('adenoide')"
+      id="adenoideButton"
+      class=""
+    >
+      Adenoide
+    </button>
+    <button
+    onclick="pickTab('sinusite')"
+    id="sinusiteButton"
+    class=""
+  >
+    Sinusite <br />
+    Fess
+  </button>
+  <button
+    onclick="pickTab('adenoamigda')"
+    id="adenoamigdaButton"
+    class=""
+  >
+    Adenoamigdalectomia
+  </button>
+  </div>
+</section>
+
+<section id="desvio">
   <div class="mainBanner">
     <img src="/img/cirurgiasf/desvio.jpg" />
     <div class="textDiv">
@@ -108,12 +176,12 @@ cssPath: "/css/cirurgias-funcionais.css"
     </div>
     <div class="btnSide">
       <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo Otorrinolaringologista.</p>
-      <a href=""><img src="/img/main/plus2.svg" alt="">Conheça outras cirurgias</a>
+      <a href="/cirurgias"><img src="/img/main/plus2.svg" alt="">Conheça outras cirurgias</a>
     </div>
   </section>
 </section>
 
-<section class="amigdala">
+<section id="amigdala">
   <section class="main">
     <img class="only-mobile folhamob" src="/img/svg/folhamobamig.svg" alt="">
     <strong>Amigdalectomia</strong>
@@ -186,12 +254,12 @@ cssPath: "/css/cirurgias-funcionais.css"
     </div>
     <div class="btnSide">
       <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo Otorrinolaringologista.</p>
-      <a href=""><img src="/img/main/plus2.svg" alt="">Conheça outras cirurgias</a>
+      <a href="/cirurgias"><img src="/img/main/plus2.svg" alt="">Conheça outras cirurgias</a>
     </div>
   </section>
 </section>
 
-<section class="reducao">
+<section id="reducao">
   <div class="main">
     <img src="/img/cirurgiasf/reducao.png" alt="">
     <div class="title">
@@ -293,7 +361,7 @@ cssPath: "/css/cirurgias-funcionais.css"
   </section>
 </section>
 
-<section class="tubinectomia">
+<section id="tubinectomia">
   <div class="mainFlex">
     <div class="mainBanner">
       <img src="/img/cirurgiasf/tubinectomia.png" />
@@ -402,12 +470,12 @@ cssPath: "/css/cirurgias-funcionais.css"
     </div>
     <div class="btnSide">
       <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo Otorrinolaringologista.</p>
-      <a href=""><img src="/img/main/plus2.svg" alt="">Conheça outras cirurgias</a>
+      <a href="/cirurgias"><img src="/img/main/plus2.svg" alt="">Conheça outras cirurgias</a>
     </div>
   </section>
 </section>
 
-<section class="uvulo">
+<section id="uvulo">
   <div class="main">
     <img src="/img/cirurgiasf/uvulo.png" alt="">
     <div class="title">
@@ -506,12 +574,12 @@ cssPath: "/css/cirurgias-funcionais.css"
     </div>
     <div class="btnSide">
       <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo Otorrinolaringologista.</p>
-      <a href=""><img src="/img/main/plus2.svg" />Conheça outras cirurgias</a>
+      <a href="/cirurgias"><img src="/img/main/plus2.svg" />Conheça outras cirurgias</a>
     </div>
   </section>
 </section>
 
-<section class="adenoide">
+<section id="adenoide">
   <div class="mainFlex">
     <div class="mainBanner">
       <img src="/img/cirurgiasf/adenoide.png" />
@@ -620,23 +688,29 @@ cssPath: "/css/cirurgias-funcionais.css"
     </div>
     <div class="btnSide">
       <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo Otorrinolaringologista.</p>
-      <a href="" class="only-desktop plus-desktop"><img src="/img/main/plus.svg" alt="">Conheça outras cirurgias</a>
-      <a href="" class="only-mobile plus-mobile"><img src="/img/main/plus2.svg" alt="">Conheça outras cirurgias</a>
+      <a href="/cirurgias" class="only-desktop plus-desktop"><img src="/img/main/plus.svg" alt="">Conheça outras cirurgias</a>
+      <a href="/cirurgias" class="only-mobile plus-mobile"><img src="/img/main/plus2.svg" alt="">Conheça outras cirurgias</a>
     </div>
   </section>
 </section>
 
-<section class="sinusite">
+<section id="sinusite">
   <div class="mainFlex">
     <div class="mainBanner">
       <div class="textDiv">
         <strong>Sinusite (Fess)</strong>
         <p>A cirurgia endoscópica dos seios nasais é feita para quem sofre com sinusite crônica. Retiramos a secreção acumulada nestes seios, além de abrir e ampliar a comunicação entre os seios e a cavidade nasal para que não se acumule mais esta secreção.</p>
+        <a
+        class="green-button only-mobile"
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5541992591500"
+        >Agendar avaliação por whatsapp
+      </a>
       </div>
       <div class="btnDiv">
         <img src="/img/cirurgiasf/sinusite.png" />
         <a
-          class="green-button"
+          class="green-button only-desktop"
           target="_blank"
           href="https://api.whatsapp.com/send?phone=5541992591500"
         >
@@ -666,6 +740,13 @@ cssPath: "/css/cirurgias-funcionais.css"
         <p>Hospital Dia</p>
       </div>
     </div>
+    <a
+      class="green-button only-mobile"
+      target="_blank"
+      href="https://api.whatsapp.com/send?phone=5541992591500"
+    >Agendar avaliação por whatsapp
+    </a>
+    <img class="dbfolha only-mobile" src="/img/svg/dbfolha.svg" />
   </section>
 
   <section class="procedimento">
@@ -691,7 +772,8 @@ cssPath: "/css/cirurgias-funcionais.css"
       Agendar avaliação por whatsapp
     </a>
 
-    <img src="/img/cirurgiasf/folhaquando2.svg" alt="" class="leaf-left" />
+    <img src="/img/cirurgiasf/folhaquando2.svg" alt="" class="leaf-left only-desktop" />
+    <img src="/img/svg/recuperacaofolha.svg" class="recfolha only-mobile" alt="">
   </section>
 
   <div class="line"></div>
@@ -703,12 +785,12 @@ cssPath: "/css/cirurgias-funcionais.css"
     </div>
     <div class="btnSide">
       <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo Otorrinolaringologista.</p>
-      <a href=""><img src="/img/main/plus2.svg" />Conheça outras cirurgias</a>
+      <a href="/cirurgias"><img src="/img/main/plus2.svg" />Conheça outras cirurgias</a>
     </div>
   </section>
 </section>
 
-<section class="adenoamigda">
+<section id="adenoamigda">
   <div class="mainFlex">
     <div class="mainBanner">
       <img src="/img/cirurgiasf/adenoamigda.png" />
@@ -716,12 +798,12 @@ cssPath: "/css/cirurgias-funcionais.css"
         <strong>Adenoamigdalectomia</strong>
         <p>É a associação entre a Adenoidectomia e Amigdalectomia no mesmo procedimento.</p>
       </div>
-      <img class="vector" src="/img/cirurgiasf/folhamain.svg" />
+      <img class="vector only-desktop" src="/img/cirurgiasf/folhamain.svg" />
     </div>
 
     <div class="btnDiv">
-      <a href=""><img src="/img/main/plus2.svg" />Saiba mais sobre Amigdalectomia</a>
-      <a href=""><img src="/img/main/plus2.svg" />Saiba mais sobre Adenoidectomia</a>
+      <a href="/cirurgias-funcionais"><img src="/img/main/plus2.svg" />Saiba mais sobre Amigdalectomia</a>
+      <a href="/cirurgias-funcionais"><img src="/img/main/plus2.svg" />Saiba mais sobre Adenoidectomia</a>
     </div>
     <a
       class="green-button"
@@ -731,5 +813,174 @@ cssPath: "/css/cirurgias-funcionais.css"
       Agendar avaliação por whatsapp
     </a>
   </div>
+  <img class="aafolha only-mobile" src="/img/svg/aafolha.svg" />
 </section>
+
 {% include 'footer.njk' %}
+
+<script>
+  const desvioButton = document.getElementById(`desvioButton`);
+  const amigdalaButton = document.getElementById(`amigdalaButton`);
+  const reducaoButton = document.getElementById(`reducaoButton`);
+  const tubinectomiaButton = document.getElementById(`tubinectomiaButton`);
+  const uvuloButton = document.getElementById(`uvuloButton`);
+  const adenoideButton = document.getElementById(`adenoideButton`);
+  const sinusiteButton = document.getElementById(`sinusiteButton`);
+  const adenoamigdaButton = document.getElementById(`adenoamigdaButton`);
+
+  const desvio = document.getElementById(`desvio`);
+  const amigdala = document.getElementById(`amigdala`);
+  const reducao = document.getElementById(`reducao`);
+  const tubinectomia = document.getElementById(`tubinectomia`);
+  const uvulo = document.getElementById(`uvulo`);
+  const adenoide = document.getElementById(`adenoide`);
+  const sinusite = document.getElementById(`sinusite`);
+  const adenoamigda = document.getElementById(`adenoamigda`);
+
+  function pickTab(id) {
+    desvio.style.display = "none";
+    amigdala.style.display = "none";
+    reducao.style.display = "none";
+    tubinectomia.style.display = "none";
+    uvulo.style.display = "none";
+    adenoide.style.display = "none";
+    sinusite.style.display = "none";
+    adenoamigda.style.display = "none";
+
+    desvioButton.classList.remove("active");
+    amigdalaButton.classList.remove("active");
+    reducaoButton.classList.remove("active");
+    tubinectomiaButton.classList.remove("active");
+    uvuloButton.classList.remove("active");
+    adenoideButton.classList.remove("active");
+    sinusiteButton.classList.remove("active");
+    adenoamigdaButton.classList.remove("active");
+
+    switch (id) {
+      case "desvio":
+        desvio.style.display = "flex";
+        desvioButton.classList.add("active");
+        break;
+      case "amigdala":
+        amigdala.style.display = "flex";
+        amigdalaButton.classList.add("active");
+        break;
+      case "reducao":
+        reducao.style.display = "flex";
+        reducaoButton.classList.add("active");
+        break;
+      case "tubinectomia":
+        tubinectomia.style.display = "flex";
+        tubinectomiaButton.classList.add("active");
+        break;
+      case "uvulo":
+        uvulo.style.display = "flex";
+        uvuloButton.classList.add("active");
+        break;
+      case "adenoide":
+        adenoide.style.display = "flex";
+        adenoideButton.classList.add("active");
+        break;
+      case "sinusite":
+        sinusite.style.display = "flex";
+        sinusiteButton.classList.add("active");
+        break;
+      case "adenoamigda":
+        adenoamigda.style.display = "flex";
+        adenoamigdaButton.classList.add("active");
+        break;
+      default:
+        break;
+    }
+  }
+
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: "1",
+    spaceBetween: 50,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var el = this.children;
+      if (this.classList[1]) {
+        el[0].innerText = "-";
+      } else {
+        el[0].innerText = "+";
+      }
+
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+
+  const swiper2 = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: "1",
+    spaceBetween: 50,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var el = this.children;
+      if (this.classList[1]) {
+        el[0].innerText = "-";
+      } else {
+        el[0].innerText = "+";
+      }
+
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>

@@ -26,7 +26,6 @@
     padding-left: 10%;
 
     h1 {
-      font-family: "Cyrene";
       font-style: normal;
       font-weight: 400;
       font-size: 56px;
@@ -73,11 +72,12 @@
       place-items: center;
 
       h1 {
-        font-size: 2.8rem;
+        font-size: 4rem;
       }
 
       p {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        width: 302px;
       }
     }
   }
@@ -164,6 +164,10 @@
 
     h2 {
       margin-top: 5.3rem;
+      letter-spacing: 0.05em;
+      font-size: 3.2rem;
+      width: 267px;
+      line-height: 120%;
     }
 
     .beneficios-container {
@@ -346,6 +350,8 @@
     }
     .card-container {
       flex-direction: column;
+      gap: unset;
+      margin-bottom: 4rem;
     }
   }
 }
@@ -413,6 +419,10 @@
       h4 {
         margin-top: -1rem;
       }
+
+      p {
+        color: $grafite;
+      }
     }
   }
 
@@ -423,6 +433,7 @@
   }
 
   @media screen and (max-width: 600px) {
+    padding-bottom: 7rem;
     flex-direction: column;
     margin: 0;
 
@@ -446,7 +457,7 @@
       margin-left: 3rem;
       padding-left: 2.1rem;
       padding-bottom: 3.4rem;
-      max-width: 75vw;
+      max-width: 76vw;
     }
 
     .leaf-left {
@@ -454,6 +465,10 @@
       top: 0%;
       left: 0;
       width: 40%;
+    }
+
+    .separator {
+      width: 80vw;
     }
   }
 }
@@ -914,6 +929,10 @@
     a {
       display: flex;
       align-items: center;
+      text-decoration: none;
+      color: $grafite;
+      font-weight: 600;
+
       img {
         margin-right: 1rem;
       }
@@ -923,10 +942,34 @@
   @media screen and (max-width: 600px) {
     flex-direction: column;
     width: 90vw;
+    padding-top: 6rem;
     padding-bottom: 4rem;
 
+    .titleSide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      p {
+        color: $grafite;
+        width: 306px;
+      }
+    }
+
     .btnSide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       margin-top: 1rem;
+      text-align: center;
+
+      p {
+        color: $grafite;
+        width: 306px;
+      }
     }
   }
 }

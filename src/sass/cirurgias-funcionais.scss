@@ -4,7 +4,98 @@
 @import "./parts/nav";
 @import "./parts/footer";
 
-.desvio {
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 28vh;
+
+  .folha1 {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 26%;
+    z-index: 9;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 15vh;
+    text-align: center;
+
+    .folha1 {
+      width: 40%;
+      top: 0;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+  gap: 116px;
+  z-index: 10;
+
+  .btnDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  button {
+    min-width: 220px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+    background: transparent;
+    min-height: 64px;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    border: none;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
+  .active {
+    font-weight: 600;
+    background-color: #63a877;
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    height: auto;
+    padding: 0;
+
+    .btnDiv {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: auto;
+      justify-content: center;
+      flex-direction: column;
+
+      button {
+        min-width: 190px;
+        width: 30%;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+#desvio {
 display: flex;
 flex-direction: column;
 
@@ -317,7 +408,7 @@ flex-direction: column;
     .mainBanner {
       flex-direction: column;
       justify-content: flex-start;
-      margin-top: 3rem;
+      margin-top: 7.2rem;
       height: 640px;
 
       .textDiv {
@@ -430,8 +521,8 @@ flex-direction: column;
   }
 }
 
-.amigdala {
-  display: flex;
+#amigdala {
+  display: none;
   flex-direction: column;
 
   .main {
@@ -780,8 +871,8 @@ flex-direction: column;
   }
 }
 
-.reducao {
-  display: flex;
+#reducao {
+  display: none;
   flex-direction: column;
 
   .main {
@@ -1207,8 +1298,8 @@ flex-direction: column;
   }
 }
 
-.tubinectomia {
-  display: flex;
+#tubinectomia {
+  display: none;
   flex-direction: column;
   
   .mainFlex {
@@ -1624,7 +1715,10 @@ flex-direction: column;
   }
 }
 
-.uvulo {
+#uvulo {
+  display: none;
+  flex-direction: column;
+
   .main {
     display: flex;
     flex-direction: row;
@@ -2203,8 +2297,8 @@ flex-direction: column;
   }
 }
 
-.adenoide {
-  display: flex;
+#adenoide {
+  display: none;
   flex-direction: column;
   
   .mainFlex {
@@ -2751,8 +2845,8 @@ flex-direction: column;
   }
 }
 
-.sinusite {
-  display: flex;
+#sinusite {
+  display: none;
   flex-direction: column;
 
   .line {
@@ -3060,10 +3154,215 @@ flex-direction: column;
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .mainFlex {
+    gap: 38px;
+    height: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    position: relative;
+
+    .mainBanner {
+      flex-direction: column-reverse;
+      gap: 26px;
+
+      .textDiv {
+        text-align: center;
+        align-items: center;
+        gap: 3.5rem;
+
+        strong {
+          font-size: 40px;
+        }
+  
+        p {
+          width: 319px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .adfolha {
+      position: absolute;
+      right: 0;
+      bottom: -56px;
+      z-index: 5;
+    }
+  }
+
+  .procedimento {
+    position: relative;
+    flex-direction: column;
+    margin-right: unset;
+    height: unset;
+    padding-left: unset;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    justify-content: flex-start;
+    gap: unset;
+    
+    .recfolha {
+      position: absolute;
+      bottom: -175px;
+      left: 0;
+      z-index: 5;
+    }
+
+    .title {
+      padding: unset;
+      align-items: center;
+      margin: unset;
+      gap: unset;
+
+      h2 {
+        margin: 0;
+        font-size: 32px;
+      }
+    }
+
+    .steps {
+      flex-direction: column;
+      margin-top: 5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: unset;
+      padding-left: unset;
+      width: unset;
+      gap: unset;
+      text-align: left;
+    }
+
+    .green-button {
+      margin: unset;
+      width: 75vw;
+    }
+
+    p {
+      width: 324px;
+      font-size: 20px;
+    }
+  }
+
+  .line {
+    width: 80vw;
+  }
+
+  .procedimentos {
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+
+    .titleSide {
+      align-items: center;
+      justify-content: center;
+      gap: 3.2rem;
+      text-align: center;
+
+      strong {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 20px;
+        width: 297px;
+        line-height: 120%;
+      }
+    }
+
+    .btnSide {
+      align-items: center;
+      text-align: center;
+      gap: 3.6rem;
+
+      p {
+        width: 306px;
+      }
+
+      .plus-desktop {
+        color: white;
+      }
+
+      .plus-mobile {
+        color: $grafite;
+      }
+    }
+  }
+
+  .beneficios {
+    position: relative;
+    padding-top: 7rem;
+    gap: 34px;
+
+    .title {
+      font-size: 20px;
+      width: 319px;
+    }
+
+    .dbfolha {
+      position: absolute;
+      right: 0;
+      bottom: 60px;
+    }
+
+    a {
+      margin-top: 4rem;
+      z-index: 2;
+    }
+  }
+
+  .recuperacao {
+    position: relative;
+    height: unset;
+    padding-top: 4rem;
+    padding-bottom: 14.5rem;
+
+    strong {
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    p {
+      font-size: 20px;
+      width: 300px;
+    }
+
+    .recfolha {
+      position: absolute;
+      bottom: -105px;
+      left: 0;
+      z-index: 5;
+    }
+  }
+
+  .procedimentos {
+    background: white;
+
+    .titleSide {
+      strong {
+        color: black;
+      }
+
+      p {
+        color: $grafite;
+      }
+    }
+
+    .btnSide {
+      p {
+        color: $grafite;
+      }
+    }
+  }
+}
 }
 
-.adenoamigda {
-  display: flex;
+#adenoamigda {
+  display: none;
   flex-direction: column;
   
   .mainFlex {
@@ -3139,6 +3438,52 @@ flex-direction: column;
           opacity: 0.8;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    position: relative;
+
+    .mainFlex {
+      gap: 4rem;
+      height: auto;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-top: 6rem;
+      padding-bottom: 10rem;
+      position: relative;
+  
+      .mainBanner {
+        flex-direction: column;
+        gap: 26px;
+  
+        .textDiv {
+          text-align: center;
+          align-items: center;
+          gap: 3.5rem;
+  
+          strong {
+            font-size: 32px;
+          }
+    
+          p {
+            width: 297px;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .btnDiv {
+        flex-direction: column;
+        gap: 2.3rem;
+      }
+    }
+
+    .aafolha {
+      position: absolute;
+      left: 0;
+      bottom: -36px;
+      z-index: 5;
     }
   }
 }

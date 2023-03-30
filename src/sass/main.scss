@@ -188,6 +188,7 @@
   }
 
   @media screen and (max-width: 600px) {
+    gap: 70px;
     height: auto;
     padding: 4rem 0;
 
@@ -298,10 +299,12 @@
 
     .blefaFirst {
       flex-direction: column;
+      gap: 50px;
 
       .blefaSide {
         h2 {
           font-size: 3rem;
+          width: 80vw;
         }
       }
 
@@ -389,13 +392,18 @@
     }
     .otoFlex {
       padding: 2rem;
-
+      gap: 20px;
       text-align: center;
       place-items: center;
       margin-right: 0;
 
       strong {
         font-size: 2.8rem;
+        width: 80vw;
+      }
+
+      span {
+        width: 80vw;
       }
 
       p {
@@ -436,6 +444,15 @@
     flex-direction: column;
     text-align: center;
     padding: 17rem 2rem;
+
+    strong {
+      width: 85vw;
+      font-size: 32px;
+    }
+
+    p {
+      width: 80vw;
+    }
   }
 }
 
@@ -672,9 +689,24 @@
     flex-direction: column-reverse;
     height: auto;
     margin-top: 4rem;
+    gap: 70px;
 
     img {
       width: 75vw !important;
+    }
+
+    .textFlex {
+      align-items: center;
+      text-align: center;
+
+      strong {
+        font-size: 32px;
+      }
+
+      p {
+        width: 85vw;
+        font-size: 22px;
+      }
     }
   }
 }
@@ -758,6 +790,10 @@
     }
 
     .textFlex {
+      strong {
+        font-size: 40px;
+      }
+
       p {
         width: 80vw;
       }
