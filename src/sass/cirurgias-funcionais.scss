@@ -312,6 +312,122 @@ flex-direction: column;
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .mainBanner {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 3rem;
+      height: 640px;
+
+      .textDiv {
+        align-items: center;
+        
+        strong {
+          font-size: 40px;
+          text-align: center;
+        }
+
+        p {
+          width: 303px;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      .vector {
+        display: none;
+      }
+    }
+
+    .beneficios {
+      position: relative;
+
+      .title {
+        margin-top: 6rem;
+        font-size: 20px;
+        width: 306px;
+      }
+
+      .folhamob {
+        position: absolute;
+        right: 0;
+        bottom: 140px;
+      }
+    }
+
+    .procedimento {
+      height: 671px;
+      padding-left: unset;
+      align-items: center;
+      padding-bottom: unset;
+      justify-content: flex-start;
+  
+      .title {
+        padding: unset;
+        align-items: center;
+        gap: 3.2rem;
+  
+        h2 {
+          margin: 0;
+          font-size: 32px;
+        }
+  
+        p {
+          font-size: 20px;
+          width: 276px;
+        }
+      }
+  
+      .steps {
+        margin-top: 4.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: unset;
+      }
+  
+      .green-button {
+        margin: unset;
+        width: 75vw;
+      }
+    }
+
+    .line {
+      width: 80vw;
+    }
+
+    .procedimentos {
+      flex-direction: column;
+      height: 561px;
+      gap: 2.4rem;
+
+      .titleSide {
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+        text-align: center;
+
+        strong {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 297px;
+          line-height: 120%;
+        }
+      }
+
+      .btnSide {
+        align-items: center;
+        text-align: center;
+        gap: 3.6rem;
+
+        p {
+          width: 306px;
+        }
+      }
+    }
+  }
 }
 
 .amigdala {
@@ -540,6 +656,123 @@ flex-direction: column;
   
         &:hover {
           opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .main {
+      position: relative;
+      gap: 32px;
+      height: 565px;
+      justify-content: flex-start;
+      padding-top: 9.7rem;
+
+      .folhamob {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      strong {
+        font-size: 40px;
+      }
+
+      p {
+        width: 319px;
+        font-size: 20px;
+      }
+    }
+
+    .darkBanner {
+      flex-direction: column;
+      height: 740px;
+      gap: 86px;
+      position: relative;
+      padding-bottom: 100px;
+
+      p {
+        font-size: 24px;
+        width: 322px;
+        text-align: center;
+      }
+
+      .dbfolha {
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+      }
+    }
+
+    .procedimento {
+      height: 671px;
+      padding-left: unset;
+      align-items: center;
+      padding-bottom: unset;
+      justify-content: flex-start;
+  
+      .title {
+        padding: unset;
+        align-items: center;
+        gap: 3.2rem;
+  
+        h2 {
+          margin: 0;
+          font-size: 32px;
+        }
+  
+        p {
+          font-size: 20px;
+          width: 276px;
+        }
+      }
+  
+      .steps {
+        margin-top: 4.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: unset;
+      }
+  
+      .green-button {
+        margin: unset;
+        width: 75vw;
+      }
+    }
+
+    .line {
+      width: 80vw;
+    }
+
+    .procedimentos {
+      flex-direction: column;
+      height: 561px;
+      gap: 2.4rem;
+
+      .titleSide {
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+        text-align: center;
+
+        strong {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 297px;
+          line-height: 120%;
+        }
+      }
+
+      .btnSide {
+        align-items: center;
+        text-align: center;
+        gap: 3.6rem;
+
+        p {
+          width: 306px;
         }
       }
     }
@@ -844,6 +1077,132 @@ flex-direction: column;
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .main {
+      position: relative;
+      gap: 38px;
+      height: 674px;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-top: 7.2rem;
+
+      .title {
+        margin-top: 31px;
+        text-align: center;
+        align-items: center;
+        gap: 1.8rem;
+
+        strong {
+          font-size: 40px;
+        }
+  
+        p {
+          width: 319px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .procedimento {
+      position: relative;
+      height: 515px;
+      padding-left: unset;
+      align-items: center;
+      padding-bottom: unset;
+      justify-content: flex-start;
+      padding-top: 8rem;
+      
+      .recfolha {
+        position: absolute;
+        top: -55px;
+        left: 0;
+        z-index: 5;
+      }
+
+      .title {
+        padding: unset;
+        align-items: center;
+        gap: 3.2rem;
+  
+        h2 {
+          margin: 0;
+          font-size: 32px;
+        }
+      }
+  
+      .steps {
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: unset;
+        padding-left: unset;
+        width: unset;
+        gap: unset;
+      }
+  
+      .green-button {
+        margin: unset;
+        width: 75vw;
+      }
+    }
+
+    .line {
+      width: 80vw;
+    }
+
+    .procedimentos {
+      flex-direction: column;
+      gap: 2.4rem;
+      margin-bottom: 10rem;
+
+      .titleSide {
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+        text-align: center;
+
+        strong {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 297px;
+          line-height: 120%;
+        }
+      }
+
+      .btnSide {
+        align-items: center;
+        text-align: center;
+        gap: 3.6rem;
+
+        p {
+          width: 306px;
+        }
+      }
+    }
+
+    .beneficios {
+      position: relative;
+      gap: 34px;
+
+      .title {
+        font-size: 20px;
+      }
+
+      .dbfolha {
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+      }
+
+      a {
+        z-index: 2;
+      }
+    }
+  }
 }
 
 .tubinectomia {
@@ -1053,41 +1412,6 @@ flex-direction: column;
       top: -60px;
       left: 0;
     }
-  
-    @media screen and (max-width: 600px) {
-      flex-direction: column;
-      margin: 0;
-  
-      .green-button {
-        width: 88vw;
-        margin: auto;
-      }
-  
-      .title {
-        margin: 0;
-        text-align: center;
-        padding: 2rem;
-        width: auto;
-  
-        h2 {
-          margin-bottom: 2.8rem;
-        }
-      }
-  
-      .steps {
-        margin-left: 3rem;
-        padding-left: 2.1rem;
-        padding-bottom: 3.4rem;
-        max-width: 75vw;
-      }
-  
-      .leaf-left {
-        position: absolute;
-        top: 0%;
-        left: 0;
-        width: 40%;
-      }
-    }
   }
 
   .line {
@@ -1158,6 +1482,141 @@ flex-direction: column;
         &:hover {
           opacity: 0.8;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .mainFlex {
+      gap: 38px;
+      height: auto;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-top: 6rem;
+      padding-bottom: 10rem;
+
+      .mainBanner {
+        flex-direction: column;
+
+        .textDiv {
+          margin-top: 31px;
+          text-align: center;
+          align-items: center;
+          gap: 1.8rem;
+  
+          strong {
+            font-size: 40px;
+          }
+    
+          p {
+            width: 319px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .procedimento {
+      position: relative;
+      flex-direction: column;
+      margin-right: unset;
+      height: 545px;
+      padding-left: unset;
+      align-items: center;
+      padding-bottom: unset;
+      justify-content: flex-start;
+      padding-top: 8rem;
+      
+      .recfolha {
+        position: absolute;
+        top: -55px;
+        left: 0;
+        z-index: 5;
+      }
+
+      .title {
+        padding: unset;
+        align-items: center;
+        margin: unset;
+        gap: 3.2rem;
+  
+        h2 {
+          margin: 0;
+          font-size: 32px;
+        }
+      }
+  
+      .steps {
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: unset;
+        padding-left: unset;
+        width: unset;
+        gap: unset;
+      }
+  
+      .green-button {
+        margin: unset;
+        width: 75vw;
+      }
+    }
+
+    .line {
+      width: 80vw;
+    }
+
+    .procedimentos {
+      flex-direction: column;
+      gap: 2.4rem;
+      margin-top: 3rem;
+      margin-bottom: 10rem;
+
+      .titleSide {
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+        text-align: center;
+
+        strong {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 297px;
+          line-height: 120%;
+        }
+      }
+
+      .btnSide {
+        align-items: center;
+        text-align: center;
+        gap: 3.6rem;
+
+        p {
+          width: 306px;
+        }
+      }
+    }
+
+    .beneficios {
+      position: relative;
+      padding-top: 7rem;
+      gap: 34px;
+
+      .title {
+        font-size: 20px;
+      }
+
+      .dbfolha {
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+      }
+
+      a {
+        z-index: 2;
       }
     }
   }
@@ -1586,6 +2045,159 @@ flex-direction: column;
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+
+    .line {
+      margin: 0 auto;
+      border-top: 1px solid #e3e3e3;
+      width: 60vw;
+    }
+
+    .main {
+      position: relative;
+      gap: 38px;
+      height: unset;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-top: 7.2rem;
+      padding-bottom: 9rem;
+
+      .title {
+        margin-top: 31px;
+        text-align: center;
+        align-items: center;
+        gap: 1.8rem;
+
+        strong {
+          font-size: 32px;
+        }
+  
+        p {
+          width: 319px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .procedimento {
+      position: relative;
+      height: unset;
+      padding-left: unset;
+      align-items: center;
+      padding-bottom: unset;
+      justify-content: flex-start;
+      padding-top: 13rem;
+      
+      .recfolha {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 5;
+      }
+
+      .title {
+        padding: unset;
+        align-items: center;
+        gap: 3.2rem;
+        z-index: 7;
+        margin-bottom: 3.9rem;
+  
+        h2 {
+          margin: 0;
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 20px;
+          line-height: 140%;
+          width: 312px;
+          text-align: center;
+        }
+      }
+  
+      .steps {
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: unset;
+        padding-left: unset;
+        width: unset;
+        gap: unset;
+      }
+  
+      .green-button {
+        margin: unset;
+        width: 75vw;
+      }
+    }
+
+    .line {
+      width: 80vw;
+    }
+
+    .procedimentos {
+      flex-direction: column;
+      align-items: center;
+      height: unset;
+      gap: 2.4rem;
+      margin-top: 6.2rem;
+      margin-bottom: 10rem;
+
+      .titleSide {
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+        text-align: center;
+
+        strong {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 297px;
+          line-height: 120%;
+        }
+      }
+
+      .btnSide {
+        align-items: center;
+        text-align: center;
+        gap: 3.6rem;
+
+        p {
+          width: 306px;
+        }
+      }
+    }
+
+    .beneficios {
+      position: relative;
+      gap: 34px;
+      padding-top: unset;
+      
+      .benFlex {
+        flex-direction: column;
+        gap: 4rem;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .dbfolha {
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+      }
+
+      a {
+        z-index: 2;
+        margin-bottom: 9rem;
+      }
+    }
+  }
 }
 
 .adenoide {
@@ -1928,6 +2540,148 @@ flex-direction: column;
         &:hover {
           opacity: 0.8;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .mainFlex {
+      gap: 38px;
+      height: auto;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-top: 6rem;
+      padding-bottom: 10rem;
+
+      .mainBanner {
+        flex-direction: column;
+
+        .textDiv {
+          margin-top: 31px;
+          text-align: center;
+          align-items: center;
+          gap: 1.8rem;
+  
+          strong {
+            font-size: 40px;
+          }
+    
+          p {
+            width: 319px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .procedimento {
+      position: relative;
+      flex-direction: column;
+      margin-right: unset;
+      height: 545px;
+      padding-left: unset;
+      align-items: center;
+      padding-bottom: unset;
+      justify-content: flex-start;
+      padding-top: 8rem;
+      
+      .recfolha {
+        position: absolute;
+        top: -55px;
+        left: 0;
+        z-index: 5;
+      }
+
+      .title {
+        padding: unset;
+        align-items: center;
+        margin: unset;
+        gap: 3.2rem;
+  
+        h2 {
+          margin: 0;
+          font-size: 32px;
+        }
+      }
+  
+      .steps {
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: unset;
+        padding-left: unset;
+        width: unset;
+        gap: unset;
+      }
+  
+      .green-button {
+        margin: unset;
+        width: 75vw;
+      }
+
+      p {
+        width: 324px;
+        font-size: 20px;
+      }
+    }
+
+    .line {
+      width: 80vw;
+    }
+
+    .procedimentos {
+      flex-direction: column;
+      gap: 2.4rem;
+      margin-top: 3rem;
+      margin-bottom: 10rem;
+
+      .titleSide {
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+        text-align: center;
+
+        strong {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 297px;
+          line-height: 120%;
+        }
+      }
+
+      .btnSide {
+        align-items: center;
+        text-align: center;
+        gap: 3.6rem;
+
+        p {
+          width: 306px;
+        }
+      }
+    }
+
+    .beneficios {
+      position: relative;
+      padding-top: 7rem;
+      gap: 34px;
+
+      .title {
+        font-size: 20px;
+        width: 319px;
+      }
+
+      .dbfolha {
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+      }
+
+      a {
+        margin-top: 4rem;
+        z-index: 2;
       }
     }
   }
