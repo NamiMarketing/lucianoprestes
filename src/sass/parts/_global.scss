@@ -203,3 +203,14 @@ optgroup {
     width: 100px;
   }
 }
+
+.whatsapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 30px;
+  right: 50px;
+
+  @media screen and (max-width: 600px) {
+    right: 17px;
+  }
+}
