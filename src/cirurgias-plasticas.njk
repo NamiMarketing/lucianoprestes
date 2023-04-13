@@ -1099,6 +1099,11 @@ cssPath: "/css/cirurgias-plasticas.css"
   const otoplastia = document.getElementById(`otoplastia`);
   const blefaroplastia = document.getElementById(`blefaroplastia`);
 
+  const params = new URLSearchParams(window.location.search);
+  console.log(params.get('cirurgia'));
+  
+  pickTab(params.get('cirurgia').toString());
+
   function pickTab(id) {
     rinoplastia.style.display = "none";
     otoplastia.style.display = "none";

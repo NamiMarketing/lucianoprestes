@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eleventy": "^1.0.6",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^7.0.0",
     "node-sass": "^7.0.1",
@@ -22,6 +21,6 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0"
+    "@11ty/eleventy": "^2.0.1"
   }
 }
