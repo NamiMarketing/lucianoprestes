@@ -89,7 +89,7 @@
   align-items: center;
   justify-content: center;
   gap: 110px;
-  height: 77vh;
+  padding: 8rem;
 
   .rinoFirst {
     display: flex;
@@ -216,6 +216,18 @@
 
       p {
         text-align: center;
+      }
+
+      .btnSide {
+        p {
+          max-width: 90vw;
+          font-size: 1.8rem;
+        }
+
+        a {
+          max-width: 90vw;
+          margin: auto;
+        }
       }
 
       .rinoSide {
