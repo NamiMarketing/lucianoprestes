@@ -1,7 +1,4 @@
-@import "./parts/global";
-@import "./parts/buttons";
-@import "./parts/nav";
-@import "./parts/footer";
+@use 'index' as *;
 
 .blog-container {
   width: 80vw;

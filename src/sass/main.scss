@@ -1,13 +1,8 @@
-@import "./parts/global";
-@import "./parts/colors";
-@import "./parts/buttons";
-@import "./parts/nav";
-@import "./parts/footer";
+@use 'index' as *;
 
 .initial-banner {
   display: flex;
-  justify-content: center;
-  place-items: center;
+  justify-content: spa;
   position: relative;
   width: 100vw;
   align-items: center;
@@ -354,11 +349,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 662px;
+  background-color: $grafite;
 
   .otoImg {
     margin-right: -282px;
-    margin-bottom: -180px;
   }
 
   .otoFlex {
@@ -373,21 +367,21 @@
       font-size: 22px;
       line-height: 36px;
       letter-spacing: 0.15em;
-      color: black;
+      color: $white;
     }
 
     strong {
       font-weight: 700;
       font-size: 40px;
       line-height: 100%;
-      color: $grafite;
+      color: $white;
       width: 473px;
     }
 
     span {
       font-size: 24px;
       line-height: 120%;
-      color: $grafite;
+      color: $white;
       width: 408px;
     }
 
@@ -403,7 +397,7 @@
       font-size: 18px;
       line-height: 140%;
       text-align: center;
-      color: $grafite;
+      color: $white;
       transition: 0.2s;
 
       &:hover {
@@ -478,12 +472,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 511px;
-
-  .otoImg {
-    margin-right: -50px;
-    margin-bottom: -180px;
-  }
 
   .otoFlex {
     display: flex;

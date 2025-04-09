@@ -1,4 +1,5 @@
-@import "./colors";
+@use "./colors" as *;
+
 $catamaran: "Catamaran", sans-serif;
 
 @font-face {

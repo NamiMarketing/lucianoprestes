@@ -1,8 +1,4 @@
-@import "./parts/global";
-@import "./parts/colors";
-@import "./parts/buttons";
-@import "./parts/nav";
-@import "./parts/footer";
+@use 'index' as *;
 
 .mainBanner {
   display: flex;
@@ -49,7 +45,7 @@
     align-items: flex-end;
 
     img {
-      width: 35vw;
+      width: 42 vw;
       object-fit: cover;
       height: 601px;
     }

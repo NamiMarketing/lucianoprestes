@@ -1,8 +1,4 @@
-@import "./parts/global";
-@import "./parts/colors";
-@import "./parts/buttons";
-@import "./parts/nav";
-@import "./parts/footer";
+@use 'index' as *;
 
 .mainBanner {
   display: flex;

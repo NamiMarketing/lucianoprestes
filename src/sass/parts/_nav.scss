@@ -1,3 +1,6 @@
+@use "./colors" as *;
+@use "./global" as *;
+
 nav {
   width: 100%;
   display: flex;

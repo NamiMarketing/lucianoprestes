@@ -1,17 +1,11 @@
-@import "./parts/global";
-@import "./parts/colors";
-@import "./parts/buttons";
-@import "./parts/nav";
-@import "./parts/footer";
+@use 'index' as *;
 
 .initial-banner {
   display: flex;
-  justify-content: center;
-  place-items: center;
+  justify-content: space-between;
   position: relative;
   width: 100vw;
   align-items: center;
-  height: 100%;
   height: 64vh;
   overflow: hidden;
   background: #2e2f30;
@@ -44,10 +38,6 @@
       margin-top: 2.4rem;
       margin-bottom: 4rem;
     }
-  }
-
-  .banner-img {
-    margin-left: -100px;
   }
 
   .logo {
