@@ -94,13 +94,14 @@ article {
 .other-posts {
   display: flex;
   flex-direction: column;
-  width: 66vw;
+  width: 85vw;
   margin: auto;
   margin-bottom: 10rem;
 
   img {
-    width: 174px;
-    height: 134px;
+    width: 25vw;
+    aspect-ratio: 800/450;
+    height: auto;
   }
 
   h2 {
@@ -116,8 +117,8 @@ article {
   }
 
   h4 {
-    font-size: 1.4rem;
-    width: 200px;
+    font-size: 2rem;
+    width: 20vw;
   }
 
   ul {
