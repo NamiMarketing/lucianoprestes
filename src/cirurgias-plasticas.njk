@@ -1176,48 +1176,4 @@ cssPath: "/css/cirurgias-plasticas.css"
     });
   }
 
-  const swiper2 = new Swiper(".swiper", {
-    // Optional parameters
-    direction: "horizontal",
-    slidesPerView: "1",
-    spaceBetween: 50,
-
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
-
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var el = this.children;
-      if (this.classList[1]) {
-        el[0].innerText = "-";
-      } else {
-        el[0].innerText = "+";
-      }
-
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
 </script>
