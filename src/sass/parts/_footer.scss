@@ -66,7 +66,7 @@ footer {
     z-index: 1;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .top {
       flex-direction: column;
       padding: 5rem;
@@ -74,9 +74,20 @@ footer {
 
       .content {
         gap: 1.4rem;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         margin-top: 4rem;
+        a, p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 120%;
+          /* or 26px */
+
+          letter-spacing: -0.015em;
+
+          color: #ffffff;
+          max-width: 24.3rem;
+        }
       }
 
       iframe {
