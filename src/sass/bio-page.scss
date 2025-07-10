@@ -1,0 +1,123 @@
+@use 'index' as *;
+
+.bio-header{
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    .header-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .left-img{
+        position: absolute;
+        left: 0;
+        height: 100%;
+    }
+    .logo{
+        position: absolute;
+        left: 10rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @media screen and (max-width:700px){
+        height: 80vh;
+        .left-img{
+            left: -5rem;
+            height: 50%;
+            bottom: 0;
+        }
+        .logo{
+            position: absolute;
+            left: 2.2rem;
+            bottom: 17%;
+            transform: translateY(50%);
+            top: unset;
+            width: 50%;
+        }
+    }
+}
+
+.content-bio{
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    align-items: center;
+    justify-content: center;
+    gap: 3.6rem;
+    padding-top: 14rem;
+    .bio-box{
+        position: relative;
+        width: 123rem;
+        height: 30rem;
+        border-radius: 30px;
+        .background{
+            filter: brightness(60%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+        .text-box{
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            left: 50%;
+            display: flex;
+            align-items: center;
+            gap: 2.3rem;
+            transform: translate(-50%, -50%);
+            h2{
+                font-size: 3.2rem;
+                line-height: 3.2rem;
+                color: $white;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .bio-box:hover{
+        .background{
+            transition: 0.7s;
+            filter: brightness(100%);
+        }
+    }
+    .nami{
+        color: $white;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        margin-top: 13rem;
+        margin-bottom: 2rem;
+    }
+    @media screen and (max-width:700px){
+        gap: 1.6rem;
+        padding-top: 8rem;
+        .bio-box{
+            position: relative;
+            width: 90%;
+            height: auto;
+            aspect-ratio: 32/16;
+            .text-box{
+                gap: 1rem;
+                h2{
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                }
+                >img{
+                    width: 1.6rem;
+                }
+            }
+        }
+
+        .nami{
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-top: 10rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.whatsapp{
+    display: none !important;
+}
