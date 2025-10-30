@@ -1,6 +1,2 @@
-webp.js
-yarn*
 /node_modules
 /public
-src/css/build
-.DS_Store

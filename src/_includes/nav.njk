@@ -1,48 +1,89 @@
-<nav data-scroll-section>
-  <a href="/"
-    ><img
-      class="logo logo2"
-      src="/img/svg/newlogo-preta.svg"
-      alt="Logo Luciano Prestes"
-  /></a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="/">HOME</a></li>
-    <li>
-      <a
-        class="{{ 'menuactive' if '/drluciano' in page.url }}"
-        href="/drluciano/"
-        >DR LUCIANO</a
-      >  
-    </li>
-    <li>
-      <a
-        class="{{ 'menuactive' if '/cirurgias-plasticas' in page.url }}"
-        href="/cirurgias-plasticas/"
-        >Cirurgias <br />Plásticas</a
-      >
-    </li>
-    <li>
-      <a
-        class="{{ 'menuactive' if '/cirurgias-funcionais' in page.url }}"
-        href="/cirurgias-funcionais/"
-        >Cirurgias <br />Funcionais</a
-      >
-    </li>
-    <li>
-      <a class="{{ 'menuactive' if '/blog' in page.url }}" href="/blog/"
-        >BLOG</a
-      >
-    </li>
-    <li>
-      <a class="{{ 'menuactive' if '/contato' in page.url }}" href="/contato/"
-        >CONTATO</a
-      >
-    </li>
+<nav class="nav" id="navbar">
+  <label class="menu-icon" for="menu-btn">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <span class="navicon"></span>
+    
+    <ul class="menu">
+      <div class="menu-left">
+        <div class="hamburguer">
+          <span class="navicon"></span>
+        </div>
+        <li> 
+          <a href="/">
+            <p>Home</p>
+          </a>
+        </li>
+        <li> 
+          <a href="/plastica">
+            <p>Cirurgias plásticas</p>
+          </a>
+        </li>
+        <li>
+          <a href="/funcionais">
+            <p>Cirurgias funcionais</p>
+          </a>
+        </li>
+        <li>
+          <a href="/contato">
+            <p>Contato</p>
+          </a>
+        </li>
+      </div>
+      <div class="menu-right">
+        <div class="top-right">
+          <img 
+            src="../img/logo-header.png"
+            srcset="../img/logo-header@2x.png 2x" 
+            alt="">
+            <div class="luciano-menu">
+              <h4>Dr. Luciano Campelo Prestes</h4>
+              <p>CRM 23250 | RQE 1112</p>
+              <p>Otorrinolaringologista especialista em Cirurgias da Face</p>
+            </div>
+        </div>
+        <div class="bottom-right">
+          <div class="info">
+            <p>Av. Sete de Setembro, 6520 - 2º Andar - Batel, Curitiba - PR, 80240-001</p>
+            <a href="tel:+5541984871500">41 98487-1500</a>
+          </div>
+        </div>
+      </div>
+    </ul>
 
-    <label class="menu-icon-inside only-mobile" for="menu-btn">
-      <span class="navicon"></span
-    ></label>
-  </ul>
-</nav>
+  </label>
+    <a href="/">
+      <img 
+        src="../img/logo-header.png"
+        srcset="../img/logo-header@2x.png 2x" 
+        alt=""
+        class="nav-logo">
+    </a> 
+  </nav>
+
+
+
+  <script>
+    const checkbox = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+    const label = document.querySelector('.menu-icon');
+  
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        // Abrir o menu suavemente
+        menu.classList.add('open');
+        const fullHeight = window.innerHeight + 'px';
+        menu.style.maxHeight = fullHeight;
+        label.classList.add('cursor');
+      } else {
+        // Fechar o menu suavemente
+        menu.style.maxHeight = menu.scrollHeight + 'px';
+        requestAnimationFrame(() => {
+          menu.style.maxHeight = '0';
+          label.classList.remove('cursor');
+        });
+        menu.addEventListener('transitionend', () => {
+          menu.classList.remove('open');
+        }, { once: true });
+      }
+    });
+  </script>

@@ -1,0 +1,588 @@
+@use 'index' as *;
+
+
+
+.selector {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  margin-top: 11rem;
+  .select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.6rem;
+    cursor: pointer;
+    p{
+      font-size: 2rem;
+      line-height: 2rem;
+      letter-spacing: 5%;
+      text-transform: uppercase;
+      font-family: 500;
+      color: $cinza-700;
+      padding-bottom: 1.3rem;
+    }
+  }
+  .selected {
+    p{
+      border-bottom: 1px solid $cinza-500;
+      padding-bottom: 1.2rem;
+    }
+  }
+  @media screen and (max-width:700px){
+    gap: 3rem;
+    margin-top: 5rem;
+    .select{
+      width: 7rem;
+      img{
+        width: 7rem;
+        height: 7rem;
+      }
+      p{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.perguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9rem;
+  padding-bottom: 12rem;
+  h2 {
+    font-weight: 400;
+    margin-bottom: 8rem;
+    font-size: 3rem;
+    font-weight: 400;
+    span{
+        font-weight: 600;
+    }
+  }
+  .itens {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0rem;
+    height: fit-content;
+    z-index: 3;
+    .item {
+      display: grid;
+      border-bottom: 1px solid $background3;
+      padding-bottom: 0rem;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 1.5rem 0;
+
+      h5 {
+        display: inline;
+        font-size: 1.8rem;
+        color: $cinza-900;
+        font-weight: 400;
+        line-height: 2.4rem;
+        width: fit-content;
+        grid-row: 1;
+      }
+      .srOnly {
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+        -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important; /* 2 */
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        white-space: nowrap !important; /* 3 */
+      }
+      .toggle-button {
+        display: inline;
+        color: $cinza-900;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 300;
+        grid-row: 1;
+      }
+
+      .more-info {
+        display: none;
+        color: $cinza-900;
+        font-size: 2rem;
+        font-weight: 400;
+        animation: appear 0.5s linear;
+        grid-row: 2;
+        margin-bottom: 1rem;
+        > p {
+          font-size: 1.7rem;
+          color: $cinza-700;
+          margin-top: 1.5rem;
+          text-align: start;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:700px){
+    width: 90%;
+    margin: 6rem auto 0;
+    padding-bottom: 6rem;
+    h2{
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      text-align: center;
+      line-height: 2.6rem;
+    }
+    .itens{
+      width: 100%;
+      .item{
+        h5{
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+        .more-info{
+          font-size: 1.6rem;
+          margin-bottom: 1rem;
+          > p{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#procedimento {
+  .first {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+    margin: 11rem auto 10rem;
+    .left-first{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: 50rem;
+        color: $cinza-700;
+        h1 {
+          font-size: 5.4rem;
+          font-weight: 600;
+          line-height: 100%;
+          font-family: $freight;
+        }
+        p{
+            font-size: 2.2rem;
+            line-height: 3.2rem;
+            letter-spacing: 0;
+        }
+    }
+    @media screen and (max-width:700px){
+        flex-direction: column;
+        width: 90%;
+        margin: 5rem auto 5rem;
+        .left-first{
+            width: 100%;
+            gap: 3rem;
+            h1{
+              font-size: 2.4rem;
+              letter-spacing: 4%;
+            }
+            p{
+              font-size: 1.6rem;
+              line-height: 2.2rem;
+            }
+        }
+    }
+  }
+  .second{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 85%;
+    margin:0 auto 13rem;
+    justify-content: center;
+    .box-second{
+        aspect-ratio: 400/212;
+        width: 40rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-size: 3rem;
+            line-height: 3.6rem;
+            letter-spacing: 4%;
+            font-weight: 400;
+            text-align: center;
+            color: $cinza-700;
+            b{
+                font-weight: 600;
+                font-family: $freight;
+                font-size: 4.2rem;
+                letter-spacing: 4%;
+            }
+        }
+        p{
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+            text-align: center;
+            color: $cinza-700;
+        }
+    }
+    .back-escuro{
+        background-color: $background3;
+        border-radius: 20px;
+    }
+    @media screen and (max-width:700px){
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        margin:0 auto 5rem;
+        .box-second, .back-escuro{
+            width: 100%;
+            h2{
+              font-size: 1.6rem;
+              width: 14rem;
+              line-height: 1.6rem;
+              b{
+                font-size: 2.2rem;
+              }
+            }
+            p{
+              font-size: 1.6rem;
+            }
+          }
+          .box-second{
+            aspect-ratio: 316/50;
+          }
+          .back-escuro{
+            aspect-ratio: 316/100;
+        }
+    }
+  }
+  .third {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-weight: 400;
+      margin-bottom: 9rem;
+      font-size: 3rem;
+      line-height: 100%;
+      span{
+        font-weight: 600;
+      }
+    }
+    .icones {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 7rem;
+      gap: 6rem;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 28rem;
+      p {
+        margin-top: 1rem;
+        font-size: 1.7rem;
+      }
+    }
+    a{
+      margin: 0 auto 13rem;
+    }
+    @media screen and (max-width:700px){
+      width: 90%;
+      h2{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+      }
+      .icones{
+        gap: 1.5rem;
+        row-gap: 4rem;
+        width: 100%;
+      }
+      .item{
+        width: 15rem;
+        gap: 2rem;
+        p{
+          font-size: 1.4rem;
+        }
+      }
+      a{
+        margin: 0 auto 6rem;
+      }
+    }
+  }
+  .fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    h2 {
+      font-weight: 400;
+      margin-bottom: 5rem;
+      font-size: 3rem;
+      line-height: 100%;
+      span{
+        font-weight: 600;
+      }
+    }
+    > p{
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: $cinza-900;
+      margin-bottom: 6rem;
+    }
+    .wrap-quando{
+      display: flex;
+      gap: 4rem;
+      justify-content: space-around;
+      p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $cinza-300;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $cinza-900;
+        border-radius: 50px;
+        text-align: center;
+        height: 10rem;
+        width: 30rem;
+      }
+    }
+    .wrap-quando2{
+      display: flex;
+      gap: 4rem;
+      justify-content: space-around;
+      p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $cinza-300;
+        font-size: 2rem;
+        font-weight: 400;
+        color: $cinza-900;
+        height: 12rem;
+        width: 29.5rem;
+        border-radius: 50px;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width:900px){
+      width: 90%;
+      margin: 0 auto 6rem;
+      h2{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        width: 31rem;
+        text-align: center;
+        line-height: 2.6rem
+      }
+      > p{
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+      .wrap-quando, .wrap-quando2{
+        flex-direction: column;
+        gap: 2rem;
+        p{
+          width: 100%;
+          font-size: 1.6rem;
+          height: 7rem;
+          width: 24rem;
+        }
+      }
+    }
+  }
+  .fifth{
+    background: $background3;
+    padding: 8rem 10rem 10rem 18rem;
+    .wrap-fourth{
+      margin: auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 12rem;
+      .left{
+        display: flex;
+        flex-direction: column;
+        width: 51rem;
+        color: $cinza-900;
+        h4{
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.2rem;
+          margin-bottom: 1.5rem;
+        }
+        h2{
+          font-weight: 400;
+          font-size: 3rem;
+          line-height: 100%;
+          margin-bottom: 6rem;
+          span{
+            font-weight: 600;
+          }
+        }
+        .bolinha{
+          display: flex;
+          gap: 3.1rem;
+          align-items: flex-start;
+          margin-bottom: 3rem;
+          .texto{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: -8px;
+            h5{
+              font-size: 2.3rem;
+              font-weight: 500;
+            }
+            p{
+              font-size: 1.8rem;
+              font-weight: 400;
+              line-height: 2.6rem;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width:700px){
+      padding: 5rem 5%;
+      .wrap-fourth{
+        flex-direction: column;
+        gap: 4rem;
+        .left{
+          width: 100%;
+          h4{
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            letter-spacing: 4%;
+          }
+          h2{
+            font-size: 2rem;
+            margin-bottom: 4rem;
+            line-height: 2.6rem;
+          }
+          .bolinha{
+            gap: 1.5rem;
+            .texto{
+              h5{
+                font-size: 1.6rem;
+              }
+              p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+              }
+            }
+          }
+        }
+        >img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .sixth{
+    width: 85%;
+    margin: 11rem auto;
+    .wrap-fifth{
+      display: flex;
+      justify-content: center;
+      gap: 18rem;
+      color: $cinza-900;
+      .fifth-left{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        h2 {
+          font-weight: 400;
+          margin-bottom: 3rem;
+          font-size: 3.2rem;
+          line-height: 100%;
+          span{
+            font-weight: 600;
+          }
+        }
+        p{
+          font-size: 2.2rem;
+          font-weight: 400;
+          line-height: 3rem;
+        }
+      }
+      .fifth-right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        p{
+          font-size: 2.2rem;
+          font-weight: 400;
+          line-height: 3rem;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+    @media screen and (max-width:700px){
+      width: 90%;
+      margin: 6rem auto;
+      .wrap-fifth{
+        flex-direction: column;
+        gap: 2.4rem;
+        .fifth-left, .fifth-right{
+          p{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+          }
+        }
+        .fifth-left{
+          h2{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            line-height: 2.6rem;
+          }
+        }
+        .fifth-right{
+          p{
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+      transform: translatex(5%);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translatex(0);
+      opacity: 1;
+  }
+}
+

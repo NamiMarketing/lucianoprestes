@@ -1,57 +1,99 @@
 @use "./colors" as *;
 @use "./global" as *;
 
-.green-button {
+.cinzaButton {
   border: none;
+  width: fit-content;
+  background: $cinza-500;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  color: $branco;
+  padding: 1.5rem 2.5rem;
+  border-radius: 25px;
+  transition: 0.2s;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #63A877;
-  border-radius: 2px;
-  width: 306px;
-  height: 48px;
-
-  font-family: $catamaran;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 23px;
   text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  transition: 0.2s;
-
-  &:hover {
-    background: #49835A;
+  pointer-events: all;
+  width: 22.6rem;
+  &:hover{
+   filter: brightness(0.5);
+   cursor: pointer;
+}
+  @media screen and (max-width:700px) {
+   font-size: 1.4rem;
+   padding: 1.2rem 1.5rem;
+   line-height: normal;
+   width: 17rem;
   }
-
-  @media screen and (max-width: 600px) {
-    max-width: 90vw;
-    font-size: 1.4rem;
+  @media (min-width:701px) and (max-width:1200px){
+   font-size: 1.4rem;
+   padding: 1.2rem;
+   line-height: normal;
   }
 }
-
-.blue-button {
-  background: linear-gradient(90deg, #1e9daf -50.1%, #70c3b8 100%);
-
-  border: none;
-  font-size: 1.8rem;
-  color: $white;
-  font-weight: 600;
-  transition: filter 0.2s;
-  border-radius: 6rem;
-  font-weight: 500;
-  font-size: 1.8rem;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+.begeButton {
+  width: fit-content;
+  background: $background3;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  color: $cinza-500;
+  padding: 1.5rem 5rem;
+  border-radius: 25px;
+  transition: 0.2s;
   display: flex;
-  place-items: center;
+  align-items: center;
   justify-content: center;
-  z-index: 999;
-
-  &:hover {
-    filter: brightness(0.8);
+  text-align: center;
+  pointer-events: all;
+  &:hover{
+   filter: brightness(0.5);
+   cursor: pointer;
+}
+  @media screen and (max-width:700px) {
+   font-size: 1.4rem;
+   padding: 0.5rem 0.8rem;
+   line-height: normal;
+  }
+  @media (min-width:701px) and (max-width:1200px){
+   font-size: 1.4rem;
+   padding: 1.2rem;
+   line-height: normal;
+  }
+}
+.pretoButton {
+  width: fit-content;
+  background: $cinza-900;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.9rem;
+  color: $branco;
+  padding: 1.5rem 5rem;
+  border-radius: 25px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: all;
+  &:hover{
+   filter: brightness(0.5);
+   cursor: pointer;
+}
+  @media screen and (max-width:700px) {
+   font-size: 1.4rem;
+   padding: 0.5rem 0.8rem;
+   line-height: normal;
+  }
+  @media (min-width:701px) and (max-width:1200px){
+   font-size: 1.4rem;
+   padding: 1.2rem;
+   line-height: normal;
   }
 }

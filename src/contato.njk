@@ -1,43 +1,66 @@
 ---
-title: Dr. Luciano Campelo Prestes
+title: Dr. Luciano Prestes
 layout: "base.njk"
 cssPath: "/css/contato.css"
 ---
 
-{% include 'nav.njk' %}
+<header>
+  {% include 'nav.njk' %}
+    <img class="desktop-only" src="../img/contato.png" alt="" />
+    <img class="mobile-only" src="../img/contato-mob.png" alt="" />
+    
+  <div class="wrap-header">
+    <h1>
+      Contato
+    </h1>
+  </div>
+</header>
 
 <section class="contato">
-  <img class="vector only-desktop" src="/img/main/vectorcontato.svg" alt="" />
-  <div class="top">
-    <div class="content">
-      <div>
-        <strong>Contato</strong>
-        <p class="sub">
-          Entre em contato conosco! <br />
-          Estamos à disposição para tirar suas dúvidas e atendê-lo com
-          excelência. <br /><br />
-          Fale com nossa equipe agora mesmo!
-        </p>
-      </div>
-
-      <div>
-        <!-- <div class="icon">
-          <img src="/img/svg/tel.svg" alt="" />
-          <a href="tel:4133141500">41 3314 - 1500</a>
-        </div> -->
-        <div class="icon">
-          <img src="/img/svg/whatsapp.svg" alt="" />
-          <a href="https://api.whatsapp.com/send?phone=5541992451500" target="_blank">41 9 9259 - 1500</a>
-        </div>
-
-        <a href="https://www.google.com/maps?ll=-25.450333,-49.300389&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5978993094600336029"
-          target="_blank">
-          <p>Av. Sete de Setembro, 6520 | Curitiba, PR <br /> 2º andar Hospital Clínica Los Angeles
-        </a>
-        </p>
-      </div>
+  <div class="wrap-contato">
+    <div class="left-contato">
+      <h1>Vamos conversar sobre o que você deseja transformar?</h1>
+      <p>Entre em contato e agende sua consulta.</p>
+    </div>
+    <div class="right-contato">
+      <a href="https://maps.app.goo.gl/k1k5C6wA9sWkyBXaA" class="item-contato">
+        <img 
+          src="../img/icons/address.png"
+          srcset="../img/icons/address@2x.png 2x"
+          alt="">
+        <p><b>Novva Otorrino</b> Av. Sete de Setembro, 6520 - <br/>2º Andar - Batel, Curitiba - PR, 80240-001</p>
+      </a>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="item-contato">
+        <img src="../img/icons/whats.png"
+          srcset="../img/icons/whats@2x.png 2x"
+          alt=""> 
+        <p>41 98487-1500</p>
+      </a>
+      <a href="https://www.instagram.com/drlucianocampeloprestes/" class="item-contato">
+        <img 
+          src="../img/icons/insta.png"
+          srcset="../img/icons/insta@2x.png 2x"
+          alt="">
+        <p>@drlucianocampeloprestes</p>
+      </a>
+      <a href="https://www.instagram.com/novvaotorrino/" class="item-contato">
+        <img 
+          src="../img/icons/insta.png"
+          srcset="../img/icons/insta@2x.png 2x"
+          alt="">
+        <p>@novvaotorrino</p>
+      </a>
     </div>
   </div>
+  
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.644714367849!2d-49.300483199999995!3d-25.450138999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35905db10b5%3A0x253c959569197947!2sDr.%20Luciano%20Prestes%20-%20Rinoplastia%20e%20Cirurgia%20da%20Face!5e0!3m2!1spt-BR!2sbr!4v1761543029938!5m2!1spt-BR!2sbr" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
 </section>
 
 {% include 'footer.njk' %}

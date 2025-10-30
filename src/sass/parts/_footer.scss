@@ -1,98 +1,139 @@
 @use "./colors" as *;
 @use "./global" as *;
 
-footer {
-  background-color: #2e2f30;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .top {
-    display: flex;
-    justify-content: center;
-    height: 363px;
-    align-items: center;
-    justify-content: space-between;
-    width: 80vw;
-  }
-
-  .content {
+footer{
     display: flex;
     flex-direction: column;
+    background-color: $cinza-900;
+
+    .nami {
+        font-size: 1.6rem;
+        color: $background3;
+        margin: auto;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+.wrap-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding: 11rem 0 6rem;
+    column-gap: 10rem;
+    width: 80%;
+    margin: auto;
+    >img{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+.footer-mid{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    color: $background3;
+    grid-column: 2;
+    grid-row: 1;
+    h4{
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+    }
+    p{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+}
+.footer-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: $background3;
+    grid-column: 3;
+    grid-row: 1;
     gap: 2.4rem;
-
-    a,
-    p {
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 120%;
-      /* or 26px */
-
-      letter-spacing: -0.015em;
-
-      color: #ffffff;
-      max-width: 24.3rem;
-    }
-
-    .icon {
-      display: flex;
-      align-items: center;
-
-      img {
-        margin-right: 1.3rem;
-      }
-    }
-  }
-
-  hr {
-    width: 80vw;
-    border: 1px solid #ffffff;
-    margin-top: 2rem;
-  }
-
-  .nami {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    color: #ffffff;
-    margin: 2.5rem;
-  }
-
-  iframe {
-    margin-top: -137px;
-    margin-bottom: -50px;
-    z-index: 1;
-  }
-
-  @media screen and (max-width: 700px) {
-    .top {
-      flex-direction: column;
-      padding: 5rem;
-      height: auto;
-
-      .content {
-        gap: 1.4rem;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 4rem;
-        a, p {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 120%;
-          /* or 26px */
-
-          letter-spacing: -0.015em;
-
-          color: #ffffff;
-          max-width: 24.3rem;
+    a{
+        p{
+            font-size: 2rem;
+            line-height: 2.6rem;
+            letter-spacing: 1%;
+            color: $background3;
         }
-      }
-
-      iframe {
-        margin-top: 4rem;
-      }
     }
-  }
+}
+
+@media screen and (max-width:700px){
+    footer{
+        .nami {
+            font-size: 1.2rem;
+      
+        }
+    }
+    .wrap-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 4.5rem 0;
+        gap: 4.5rem;
+        align-items: flex-start;
+        > img{
+            order: 3;
+            width: 12rem;
+        }
+    }
+    .footer-mid{
+        gap: 1rem;
+        h4{
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+        }
+        p{
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+    }
+    .footer-right{
+        gap: 1.5rem;
+        a{
+            p{
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (min-width:701px) and (max-width:1200px){
+    footer{
+        >a {
+            font-size: 1.4rem;
+        }
+    }
+    .wrap-footer{
+        width: 90%;
+        margin: 4rem auto 0;
+        > img{
+            width: 35%;
+        }
+    }
+    .footer-texto{
+        h2{
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+        }
+        .icones{
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
 }

@@ -1,49 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-212322523-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<html lang="pt-BR">
 
-      gtag("config", "UA-212322523-2");
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Luciano Prestes - Cirurgia da face">
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Descubra os benefícios da cirurgia plástica facial avançada com o Dr. Luciano Prestes em Curitiba. Especializado em rinoplastia, otoplastia e blefaroplastia, o Dr. Prestes oferece anos de experiência e habilidade para garantir resultados estéticos impressionantes e seguros para seus pacientes."
-    />
-
-    <link rel="stylesheet" href="{{ cssPath }}" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://drlucianoprestes.com.br/img/favicon-32x32.png"
-    />
-   
-
-    <link
+  <link rel="stylesheet" href="{{ cssPath }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://db.onlinewebfonts.com/c/90fe831fa65b9632a4790c1a1732e9ab?family=FreightNeo+W03+Medium" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/a825694f9c5941d2d47f33194f8653a8?family=FreightNeo+W03+Bold" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/logo.png" />   
+  <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
 
-    <title>{{ title }}</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Google Tag Manager -->
+  <title>{{ title }}</title>
+
+
+
+<!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -58,46 +45,11 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "1008420796394398");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=1008420796394398&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-  </head>
+</head>
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
+<body>
+
+   <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-MSVHGHH"
@@ -107,17 +59,28 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <main>
-      {{ content | safe }}
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+
+</body>
 
       <div class="whatsapp">
-        <a
-          href="https://api.whatsapp.com/send?phone=5541992451500"
-          target="_blank"
-        >
-          <img src="/img/svg/float-whats.svg" class="whatsapp" alt="" />
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor.">
+          <img 
+            src="../img/icons/whatsapp.png"
+            srcset="../img/icons/whatsapp@2x.png 2x"
+            alt="">
         </a>
       </div>
-    </main>
-  </body>
+
+
+ <script>
+    AOS.init({
+      duration: 1000,
+      easing: "linear"
+    });
+  </script>
 </html>

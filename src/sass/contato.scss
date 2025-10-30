@@ -1,100 +1,94 @@
 @use 'index' as *;
 
-.contato {
-  background-color: #ffffff;
+
+.contato{
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 14rem;
+}
+
+.wrap-contato{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 603px;
   justify-content: center;
-
-  .vector {
-    position: absolute;
-    left: 0;
-  }
-
-  .top {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-  }
-
-  .content {
-    display: flex;
-    justify-content: center;
-    gap: 51px;
-    align-items: center;
-
-    strong {
+  align-items: flex-start;
+  padding: 14rem 0 10rem;
+  gap: 12rem;
+  color: $cinza-900;
+  .left-contato{
+    width: 50rem;
+    h1{
+      font-size: 4rem;
+      line-height: 4.8rem;
       font-weight: 600;
-      font-size: 64px;
-      line-height: 100%;
-      letter-spacing: -0.015em;
-      color: #353535;
+      font-family: $freight;
+      margin-bottom: 2rem;
     }
-
-    .sub {
-      font-size: 18px;
-      line-height: 120%;
-      width: 331px;
-      color: #353535;
-      margin-bottom: 38px;
+    p{
+      font-size: 2.2rem;
+      line-height: 3.2rem;
     }
-
-    a,
-    p {
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 120%;
-      letter-spacing: -0.015em;
-      color: #353535;
-    }
-
-    .icon {
+  }
+  .right-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    .item-contato{
       display: flex;
+      gap: 3rem;
       align-items: center;
-
-      img {
-        margin-right: 1.3rem;
+      p{
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 1%;
+        color: $cinza-900;
       }
     }
   }
+}
 
-  .map {
-    z-index: 5;
+iframe{
+  aspect-ratio: 124/50;
+  width: 100%;
+}
 
-    iframe {
-      margin-bottom: -105px;
-      z-index: 1;
+@media (max-width: 700px){
+  .contato{
+    width: 90%;
+    padding-bottom: 6rem;
+  }
+  .wrap-contato{
+    flex-direction: column;
+    padding: 6rem 0;
+    gap: 4rem;
+    .left-contato{
+      width: 100%;
+      h1{
+        font-size: 2.4rem;
+        line-height: 3rem;
+      }
+      p{
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+      }
+    }
+    .right-contato{
+      width: 100%;
+      gap: 3rem;
+      .item-contato{
+        align-items: flex-start;
+        img{
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+        p{
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
+      }
     }
   }
-
-  @media screen and (max-width: 600px) {
-    .top {
-      flex-direction: column;
-
-      .content {
-        flex-direction: column;
-        gap: 1.4rem;
-        align-items: center;
-        justify-content: center;
-
-        .sub {
-          text-align: center;
-        }
-
-        > div {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 10px;
-        }
-      }
-
-      iframe {
-        margin: 0;
-      }
-    }
+  iframe{
+    aspect-ratio: 1/1;
+    margin: auto;
   }
 }

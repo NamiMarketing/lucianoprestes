@@ -1,0 +1,700 @@
+---
+title: Dr. Luciano Prestes
+layout: "base.njk"
+cssPath: "/css/funcionais.css"
+---
+
+<header>
+  {% include 'nav.njk' %}
+    <img class="desktop-only" src="../img/pages/funcionais/header.png" alt="" />
+    <img class="mobile-only" src="../img/pages/funcionais/header-mob.png" alt="" />
+    
+  <div class="wrap-header">
+    <h1>
+      Cirurgias <br/>
+      Funcionais
+    </h1>
+  </div>
+</header>
+
+
+<div class="selector">
+  <button class="select upper selected" id="desvio">Desvio de septo</button>
+  <button class="select upper" id="amigdalectomia">Amigdalectomia</button>
+  <button class="select upper" id="fratura">Fratura Nasal</button>
+  <button class="select upper" id="tubinectomia">Tubinectomia</button>
+  <button class="select upper desktop-only" id="uvulo">Uvulopalato-faringoplastia</button>
+  <button class="select upper mobile-only" id="uvulos">Uvulopalatofaringoplastia</button>
+  <button class="select upper" id="adenoidectomia">Adenoidectomia</button>
+  <button class="select upper" id="sinusite">Sinusite</button>
+  <button class="select upper" id="adenoamigda" lang="pt-BR">Adenoamigdalectomia</button>
+</div>
+
+<section id="otorrino" class="otorrino">
+  <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Desvio de Septo</h1>
+        <div class="itens">
+          <div class="item">
+            <img src="../../img/pages/funcionais/septo.svg" alt="">
+            <h3>Septo <br>normal</h3>
+          </div>
+          <div class="item">
+            <img src="../../img/pages/funcionais/septo2.svg" alt="">
+            <h3>Septo <br>com desvio</h3>
+          </div>
+        </div>
+      </div>
+      <div class="others-right">
+        <p>Este é um procedimento feito para corrigir o desvio septal (parede que divide o nariz ao meio), removendo e reposicionando as porções de cartilagem ou osso que não estiverem centralizadas.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Tem duração de aproximadamente dez minutos, com os cirurgiões mais experientes, e um pós operatório sem dor, inchaço ou curativos.</p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/relogio.svg" alt="">
+              <p>Cirurgia de rápida duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/anestesia.svg" alt="">
+              <p>Anestesia local com sedação</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/tampoes.svg" alt="">
+              <p>Sem uso de Tampões</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+
+    </div>
+  </div>
+
+  <div class="others-second">
+    <h2>QUANDO FAZER?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas e mudanças no nariz, como:</p>
+    <div class="wrap-quando2">
+      <p>Respiração bucal</p>
+      <p>Roncos</p>
+      <p>Rinite alérgica que não cede aos medicamentos</p>
+      <p>Mudança na estrutura dos dentes pela respiração oral</p>
+    </div>
+    <a
+      href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor."
+      class="cinzaButton"
+      >Agendar avaliação</a
+    >
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1 class="desktop-only">PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <h1 class="mobile-only">PROCEDIMENTOS <b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma rinoplastia e/ou turbinectomia (remoção de cornetos nasais), concomitantemente ao desvio de septo.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Fale conosco</a>
+    </div>
+  </div>
+</section>
+
+{% include 'footer.njk' %}
+
+<script>
+  let selected = "otoneuro";
+  const section = document.getElementById("otorrino");
+
+  const desvio = document.getElementById("desvio");
+  desvio.addEventListener("click", () => {
+    resetSelection();
+    selected = "desvio";
+    desvio.classList.add("selected");
+    updateSection();
+  });
+  
+  const amigdalectomia = document.getElementById("amigdalectomia");
+  amigdalectomia.addEventListener("click", () => {
+    resetSelection();
+    selected = "amigdalectomia";
+    amigdalectomia.classList.add("selected");
+    updateSection();
+  });
+  
+  const fratura = document.getElementById("fratura");
+  fratura.addEventListener("click", () => {
+    resetSelection();
+    selected = "fratura";
+    fratura.classList.add("selected");
+    updateSection();
+  });
+  
+  const tubinectomia = document.getElementById("tubinectomia");
+  tubinectomia.addEventListener("click", () => {
+    resetSelection();
+    selected = "tubinectomia";
+    tubinectomia.classList.add("selected");
+    updateSection();
+  });
+
+  const uvulo = document.getElementById("uvulo");
+  uvulo.addEventListener("click", () => {
+    resetSelection();
+    selected = "uvulo";
+    uvulo.classList.add("selected");
+    updateSection();
+  });
+  const uvulos = document.getElementById("uvulos");
+  uvulos.addEventListener("click", () => {
+    resetSelection();
+    selected = "uvulos";
+    uvulos.classList.add("selected");
+    updateSection();
+  });
+
+  const adenoidectomia = document.getElementById("adenoidectomia");
+  adenoidectomia.addEventListener("click", () => {
+    resetSelection();
+    selected = "adenoidectomia";
+    adenoidectomia.classList.add("selected");
+    updateSection();
+  });
+  
+  const sinusite = document.getElementById("sinusite");
+  sinusite.addEventListener("click", () => {
+    resetSelection();
+    selected = "sinusite";
+    sinusite.classList.add("selected");
+    updateSection();
+  });
+
+  const adenoamigda = document.getElementById("adenoamigda");
+  adenoamigda.addEventListener("click", () => {
+    resetSelection();
+    selected = "adenoamigda";
+    adenoamigda.classList.add("selected");
+    updateSection();
+  });
+
+  function resetSelection() {
+    desvio.classList.remove("selected");
+    amigdalectomia.classList.remove("selected");
+    fratura.classList.remove("selected");
+    tubinectomia.classList.remove("selected");
+    uvulo.classList.remove("selected");
+    uvulos.classList.remove("selected");
+    adenoidectomia.classList.remove("selected");
+    sinusite.classList.remove("selected");
+    adenoamigda.classList.remove("selected");
+  }
+
+  function updateSection() {
+
+    switch(selected){
+      case "desvio":
+        section.innerHTML = `
+        <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Desvio de Septo</h1>
+        <div class="itens">
+          <div class="item">
+            <img src="../../img/pages/funcionais/septo.svg" alt="">
+            <h3>Septo <br>normal</h3>
+          </div>
+          <div class="item">
+            <img src="../../img/pages/funcionais/septo2.svg" alt="">
+            <h3>Septo <br>com desvio</h3>
+          </div>
+        </div>
+      </div>
+      <div class="others-right">
+        <p>Este é um procedimento feito para corrigir o desvio septal (parede que divide o nariz ao meio), removendo e reposicionando as porções de cartilagem ou osso que não estiverem centralizadas.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Tem duração de aproximadamente dez minutos, com os cirurgiões mais experientes, e um pós operatório sem dor, inchaço ou curativos.</p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/relogio.svg" alt="">
+              <p>Cirurgia de rápida duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/anestesia.svg" alt="">
+              <p>Anestesia local com sedação</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/tampoes.svg" alt="">
+              <p>Sem uso de Tampões</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+
+    </div>
+  </div>
+  <div class="others-second">
+    <h2>QUANDO FAZER?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas e mudanças no nariz, como:</p>
+    <div class="wrap-quando2">
+      <p>Respiração bucal</p>
+      <p>Roncos</p>
+      <p>Rinite alérgica que não cede aos medicamentos</p>
+      <p>Mudança na estrutura dos dentes pela respiração oral</p>
+    </div>
+    <a
+      href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor."
+      class="cinzaButton"
+      >Agendar avaliação</a
+    >
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1 class="desktop-only">PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <h1 class="mobile-only">PROCEDIMENTOS <b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma rinoplastia e/ou turbinectomia (remoção de cornetos nasais), concomitantemente ao desvio de septo.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+    </div>
+  </div>
+        `
+        break
+      case "amigdalectomia":
+        section.innerHTML = `
+         <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Amigdalectomia</h1>
+        <div class="itens">
+          <div class="item">
+            <img src="../../img/pages/funcionais/amigdalectomia.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="others-right">
+        <p>É a remoção das amígdalas palatinas quando estão hipertrofiadas, provocando roncos e prejudicando a respiração, ou quando acabam inflamando com frequência e demandando ciclos de medicamentos repetidamente. <br/><br/>Temos também indicação de remover nos adultos, quando as amígdalas formam casium, resíduos alimentares que se acumulam nestas estruturas provocando halitose.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+  </div>
+  <div class="others-second">
+    <h2>QUANDO FAZER?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas:</p>
+    <div class="wrap-quando">
+      <p>Respiração bucal</p>
+      <p>Roncos</p>
+      <p>Infecções repetidas</p>
+      <p>Casium (halitose)</p>
+    </div>
+    <a
+      href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor."
+      class="cinzaButton"
+      >Agendar avaliação</a
+    >
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1>PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma rinoplastia e/ou turbinectomia (remoção de cornetos nasais), concomitantemente à amigdalectomia.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Fale conosco</a>
+    </div>
+  </div>
+        `
+        break
+      case "fratura":
+        section.innerHTML = `
+         <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Redução de Fratura Nasal</h1>
+      </div>
+      <div class="others-right">
+        <p>Após um trauma facial, a fratura nasal pode comprometer tanto a função respiratória quanto a estética do rosto. A cirurgia de redução de fratura nasal atua na reposição precisa dos ossos, restabelecendo forma, equilíbrio facial e respiração adequada.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>É feito com anestesia local e sedação, rápida, sem cortes ou suturas e indolor no pós-operatório. </p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/relogio.svg" alt="">
+              <p>10 minutos de duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/anestesia.svg" alt="">
+              <p>Anestesia local com sedação</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/tampoes.svg" alt="">
+              <p>Sem tamponamento<br>
+                Curativo (tala) por 5 dias</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/ambulatorial.svg" alt="">
+              <p>Ambulatorial</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+
+    </div>
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1>PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma septoplastia concomitantemente a redução de fratura nasal.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Fale conosco</a>
+    </div>
+  </div>
+        `
+        break
+      case "tubinectomia":
+        section.innerHTML = `
+        <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Tubinectomia</h1>
+      </div>
+      <div class="others-right">
+        <p>A tubinectomia é uma cirurgia indicada para reduzir o tamanho dos cornetos nasais, estruturas que, quando aumentadas, causam obstrução e dificuldade para respirar. O procedimento remove o excesso de tecido, melhora o fluxo de ar e alivia sintomas como congestão e respiração bucal, preservando a função natural dos cornetos.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>É feito com anestesia local e sedação, rápida, sem cortes ou suturas e indolor no pós-operatório. </p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/relogio.svg" alt="">
+              <p>10 minutos de duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/anestesia.svg" alt="">
+              <p>Anestesia local com sedação</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/tampoes.svg" alt="">
+              <p>Sem tamponamento</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/ambulatorial.svg" alt="">
+              <p>Ambulatorial</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+
+    </div>
+  </div>
+  <div class="others-second">
+    <h2>QUANDO FAZER?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas:</p>
+    <div class="wrap-quando2">
+      <p>Respiração bucal</p>
+      <p>Roncos</p>
+      <p>Rinite alérgica que não cede aos medicamentos</p>
+      <p>Mudança na estrutura dos dentes pela respiração oral</p>
+    </div>
+    <a
+      href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor."
+      class="cinzaButton"
+      >Agendar avaliação</a
+    >
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1>PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma rinoplastia e/ou septoplastia (remoção de cornetos nasais), concomitantemente à tubinectomia.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Fale conosco</a>
+    </div>
+  </div>
+        `
+        break
+      case "uvulo":
+        section.innerHTML = `
+        <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left" style="align-items: center;">
+        <h1 style="font-size: 3.6rem;" >Uvulopalatofaringoplastia</h1>
+        <div class="itens">
+          <div class="item">
+            <img src="../../img/pages/funcionais/uvulo.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="others-right">
+        <p>A uvulopalatofaringoplastia é uma cirurgia que remove o excesso de tecido da garganta para ampliar a passagem de ar. Indicada para casos de ronco e apneia do sono, melhora a respiração e a qualidade do sono.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>É feito com anestesia local e sedação, rápida, sem cortes ou suturas e indolor no pós-operatório. </p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/relogio.svg" alt="">
+              <p>10 minutos de duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/anestesia.svg" alt="">
+              <p>Anestesia local com sedação</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/hospital.svg" alt="">
+              <p>Hospital dia</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton" >Agendar avaliação</a>
+    </div>
+  </div>
+  <div class="others-second">
+    <h2>QUANDO FAZER?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas:</p>
+    <div class="wrap-quando">
+      <p>Ronco</p>
+      <p>Apneia</p>
+      <p>Sonolência diurna</p>
+      <p>Sono não reparador</p>
+    </div>
+    <a
+      href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor."
+      class="cinzaButton"
+      >Agendar avaliação</a
+    >
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1>PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma rinoplastia e/ou septoplastia (remoção de cornetos nasais), concomitantemente à tubinectomia.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Fale conosco</a>
+    </div>
+  </div>
+        `
+        break
+      case "uvulos":
+        section.innerHTML = `
+        <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left" style="align-items: center;">
+        <h1 style="font-size: 2.4rem;" >Uvulopalatofaringoplastia</h1>
+        <div class="itens">
+          <div class="item">
+            <img src="../../img/pages/funcionais/uvulo.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="others-right">
+        <p>Muitos pacientes sofrem com ronco e apneia. E isto pode ser provocado pela região da garganta, quando ela está mais estreita ou flácida, prejudicando o fluxo de ar.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>É feito com anestesia local e sedação, rápida, sem cortes ou suturas e indolor no pós-operatório. </p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/relogio.svg" alt="">
+              <p>10 minutos de duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/anestesia.svg" alt="">
+              <p>Anestesia local com sedação</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/hospital.svg" alt="">
+              <p>Hospital dia</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton" >Agendar avaliação</a>
+    </div>
+  </div>
+  <div class="others-second">
+    <h2>QUANDO FAZER?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas:</p>
+    <div class="wrap-quando">
+      <p>Ronco</p>
+      <p>Apneia</p>
+      <p>Sonolência diurna</p>
+      <p>Sono não reparador</p>
+    </div>
+    <a
+      href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor."
+      class="cinzaButton"
+      >Agendar avaliação</a
+    >
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1>PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma rinoplastia e/ou septoplastia (remoção de cornetos nasais), concomitantemente à tubinectomia.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+    </div>
+  </div>
+        `
+        break
+      case "adenoidectomia":
+        section.innerHTML = `
+          <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Adenoidectomia</h1>
+        <div class="itens">
+          <div class="item">
+            <img src="../../img/pages/funcionais/adenoide.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="others-right">
+        <p>É um procedimento para curetagem (raspagem) da adenóide nos pacientes que tem esta estrutura hipertrofiada, interrompendo o fluxo de ar pelo nariz, provocando roncos e nariz trancado.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>É feita a partir de 1 ano e meio de idade, com anestesia geral e curta duração (10 minutos). O paciente faz em regime de Hospital Dia, sem necessidade de pernoite no hospital.</p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/relogio.svg" alt="">
+              <p>10 minutos de duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/geral.svg" alt="">
+              <p>Anestesia geral</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/tampoes.svg" alt="">
+              <p>Sem tamponamento</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/ambulatorial.svg" alt="">
+              <p>Ambulatorial</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton" >Agendar avaliação</a>
+    </div>
+  </div>
+  <div class="others-second">
+    <h2>QUANDO FAZER?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas:</p>
+    <div class="wrap-quando">
+      <p>Respiração bucal</p>
+      <p>Roncos</p>
+      <p>Congestão nasal</p>
+    </div>
+    <a
+      href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor."
+      class="cinzaButton"
+      >Fale conosco</a
+    >
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1>RECUPERAÇÃO</h1>
+      <p>O paciente precisa evitar alimentos quentes, e não fazer esforço físico. O pós-operatório é indolor.</p>
+    </div>
+  </div>
+        `
+        break
+      case "sinusite":
+        section.innerHTML = `
+         <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>sinusite (fess)</h1>
+        <div class="itens">
+          <div class="item">
+            <img src="../../img/pages/funcionais/sinusite.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="others-right">
+        <p>A cirurgia endoscópica dos seios nasais é feita para quem sofre com sinusite crônica. Retiramos a secreção acumulada nestes seios, além de abrir e ampliar a comunicação entre os seios e a cavidade nasal para que não se acumule mais esta secreção.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>É feita em regime de Hospital Dia, com anestesia local e sedação, e tem duração de aproximadamente uma hora.</p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/relogio.svg" alt="">
+              <p>1 hora de duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/anestesia.svg" alt="">
+              <p>Anestesia local com sedação</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/funcionais/hospital.svg" alt="">
+              <p>Hospital Dia</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+
+    </div>
+  </div>
+  <div class="others-second">
+    <h2>RECUPERAÇÃO</span></h2>
+    <div class="wrap-quando">
+      <p>Indolor</p>
+      <p>Sem curativos</p>
+    </div>
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1>PROCEDIMENTOS <br><b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma septoplastia e/ou turbinectomia (remoção de cornetos nasais), concomitantemente  cirurgia endoscópica dos seios nasais.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Fale conosco</a>
+    </div>
+  </div>
+        `
+        break
+      case "adenoamigda":
+        section.innerHTML = `
+        <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Adenoamigdalectomia</h1>
+      </div>
+      <div class="others-right">
+        <p>É a associação entre a Adenoidectomia e Amigdalectomia no mesmo procedimento. A adenoamigdalectomia é a cirurgia para remoção das amígdalas e adenóides, indicada em casos de infecções recorrentes ou obstrução respiratória. O procedimento melhora a respiração, reduz roncos e infecções de garganta, além de favorecer a qualidade do sono e o bem-estar geral.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+   
+  </div>
+        `
+        break
+      case "adenoamigdas":
+        section.innerHTML = `
+        <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Adenoamigdalectomia</h1>
+      </div>
+      <div class="others-right">
+        <p>É a associação entre a Adenoidectomia e Amigdalectomia no mesmo procedimento.</p>
+        <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+      </div>
+    </div>
+   
+  </div>
+        `
+        break
+      }
+  }
+</script>

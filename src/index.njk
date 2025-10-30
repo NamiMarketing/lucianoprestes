@@ -1,299 +1,356 @@
 ---
-title: Dr. Luciano Campelo Prestes
+title: Dr. Luciano Prestes
 layout: "base.njk"
-cssPath: "/css/main.css"
+cssPath: "/css/home.css"
 ---
 
-{% include 'nav.njk' %}
-
-<section class="initial-banner">
-  <div class="content">
-    <h1>
-      Resultados harmônicos <br />
-      e naturais
-    </h1>
+<header>
+  {% include 'nav.njk' %}
+    <img class="desktop-only" src="../img/home/header.png" alt="" />
+    <img class="mobile-only" src="../img/home/header-mob.png" alt="" />
+    
+  <div class="wrap-header">
+    <img 
+      src="../img/home/header-text.png"
+      srcset="../img/home/header-text@2x.png 2x"
+      alt="">
     <p>
-      Nossa clínica tem como propósito revelar a beleza única e natural em cada
-      paciente, por meio de procedimentos que buscam a harmonia e a simetria em
-      cada traço.
+      Há mais de 18 anos, o Dr. Luciano Prestes transforma confiança em resultado com técnica, precisão e naturalidade que valorizam o que há de único em você.
     </p>
+    <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
   </div>
- 
-  <picture>
-    <source type="image/webp" srcset="../img/banner.webp" />
-    <source type="image/png" srcset="../img/banner.png" />
-    <img class="banner-img" src="../img/banner.png" alt="Foto do paciente" />
-  </picture>
+</header>
+
+<section class="excelencia">
+  <div class="left-excelencia">
+    <h2>Excelência e experiência em cirurgia facial.</h2>
+    <img class="only-mobile" src="../img/home/luciano.png" alt="">
+    <p>Com uma trajetória marcada pela excelência e pela busca constante do equilíbrio entre ciência e estética, o Dr. Luciano Prestes é referência em cirurgia facial e otorrinolaringologia. Com mais de 18 anos de experiência, une precisão técnica, sensibilidade artística e respeito à individualidade de cada paciente,  entregando resultados naturais e harmônicos.</p>
+    <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+  </div>
+  <img class="tablet-desktop" src="../img/home/luciano.png" alt="">
 </section>
 
-<!-- <section class="rinoBanner">
-  <div class="rinoFirst">
-    <div class="rinoSide">
-      <p>RINOPLASTIA</p>
-      <h2>O nariz que você sempre sonhou em harmonia com o seu rosto.</h2>
-    </div>
-    <div class="btnSide">
-      <p>
-        Corrija as imperfeições do seu nariz com naturalidade, com rápida
-        recuperação com alta no mesmo dia.
-      </p>
+<section class="procedimentos">
+  <div class="title">
+    <span></span>
+    <h1>Nossos procedimentos</h1>
+  </div>
+  <div class="wrap-procedimentos">
+    <a href="/plastica" class="item-procedimentos">
+      <img src="../img/home/rinoplastia.png" alt="">
+      <p>Rinoplastia</p>
+    </a>
+    <a href="/plastica/?selection=blefaroplastia" class="item-procedimentos">
+      <img src="../img/home/blefaroplastia.png" alt="">
+      <p>Blefaroplastia</p>
+    </a>
+    <a href="/plastica/?selection=otoplastia" class="item-procedimentos">
+      <img src="../img/home/otoplastia.png" alt="">
+      <p>Otoplastia</p>
+    </a>
+  </div>
+</section>
 
-      <a
-        href="https://api.whatsapp.com/send?phone=5541992451500"
-        target="_blank"
-        >Agendar avaliação por WhatsApp</a
-      >
-
-      <a
-        href="/cirurgias-plasticas/?cirurgia=rinoplastia"
-        class="more-details-button"
-        ><img src="/img/main/plus2.svg" alt="" />Saiba mais sobre a
-        Rinoplastia</a
-      >
+<section class="funcionais">
+  <img class="tablet-desktop" src="../img/home/funcionais.png" alt="">
+  <img class="only-mobile" src="../img/home/funcionais-mob.png" alt="">
+  <div class="funcionais-text">
+    <h3>Cirurgias funcionais</h3>
+    <h2>Função e estética em perfeita harmonia.</h2>
+    <p>Cirurgias otorrinolaringológicas que restauram a respiração e o conforto com técnica precisa, mínima invasão e resultados duradouros.</p>
+    <div class="funcionais-buttons">
+      <a href="/funcionais" class="begeButton">Veja mais</a>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
     </div>
   </div>
-  <div class="rinoSecond">
-    <div class="rinoFlex">
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon.svg" alt="" />
-        <p>Anestesia local com sedação</p>
-      </div>
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon2.svg" alt="" />
-        <p>
-          Acompanhamento pós-operatório por seis meses (sem custo adicional)
-        </p>
-      </div>
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon3.svg" alt="" />
-        <p>Laser ultrassônico para corte do osso (sem uso de martelo)</p>
-      </div>
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon4.svg" alt="" />
-        <p>Rápida recuperação com alta no mesmo dia</p>
-      </div>
-      <div class="rinoItem">
-        <img src="/img/main/rinoicon5.svg" alt="" />
-        <p>Sem uso de Tampões</p>
+</section>
+
+<section class="diferenciais">
+  <div class="diferenciais-border">
+    <span></span>
+    <img src="../img/logo.png" alt="">
+    <span></span>
+  </div>
+  <h1>Diferenciais que transformam experiência em resultado.</h1>
+  <div class="wrap-diferenciais">
+    <img src="../img/home/diferenciais.png" alt="">
+    <div class="right-diferenciais" >
+      <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">O Dr. Luciano Campelo Prestes é médico <b>especialista em Otorrinolaringologia e Cirurgia da Face.</b> Formado e mestre pela UFPR, possui aperfeiçoamento em cirurgia plástica facial avançada na Universidad de Medellín. Com ampla experiência clínica, foi chefe de pronto-atendimento por mais de uma década e hoje é <b>diretor técnico da Novva Otorrino</b>, em Curitiba, onde realiza rinoplastia, blefaroplastia, otoplastia e cirurgias funcionais da face com excelência e naturalidade.</p>
+      <div class="diferenciais-itens" >
+        <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img 
+          src="../img/home/foco.png"
+          srcset="../img/home/foco@2x.png 2x"
+          alt="">
+          <p>Foco no resultado harmonioso e natural</p>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img 
+          src="../img/home/simulacao.png"
+          srcset="../img/home/simulacao@2x.png 2x"
+          alt="">
+          <p>Simulação com resultado cirúrgico</p>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img 
+          src="../img/home/medico.png"
+          srcset="../img/home/medico@2x.png 2x"
+          alt="">
+          <p>Médico cirurgião com mais de 18 anos de experiência</p>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img 
+          src="../img/home/consulta.png"
+          srcset="../img/home/consulta@2x.png 2x"
+          alt="">
+          <p>Consulta online e presencial</p>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img 
+          src="../img/home/cirurgias.png"
+          srcset="../img/home/cirurgias@2x.png 2x"
+          alt="">
+          <p>Cirurgias combinadas estéticas e funcionais</p>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img 
+          src="../img/home/atua.png"
+          srcset="../img/home/atua@2x.png 2x"
+          alt="">
+          <p>Atua em um hospital referência em Curitiba, com qualificação ONA</p>
+        </div>
       </div>
     </div>
-  </div> 
-</section> 
+  </div>
+</section>
 
-<section class="blefaBanner">
-  <div class="blefaFirst">
-    <div class="blefaSide">
-      <p>BLEFAROPLASTIA</p>
-      <h2>Seus olhos e pálpebras sem flacidez ou bolsas</h2>
-      <div class="btnSide">
+<section class="novva">
+  <div class="box-novva">
+    <h1>A Novva Otorrino</h1>
+    <p>conta com uma equipe de médicos referências em suas especialidades, além de uma estrutura completa com equipamentos de última geração.</p>
+  </div>
+  <div class="bottom-novva">
+    <img src="../img/home/novva.png" alt="">
+  </div>
+  <div class="right-novva">
+    <img src="../img/home/novva2.png" alt="">
+    <div class="novva-buttons">
+      <a href="https://novvaotorrino.com/" class="pretoButton">Visite o site</a>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+    </div>
+  </div>
+</section>
+
+<section class="depoimentos">
+  <div class="title">
+    <div class="left-depoimentos">
+      <h3>depoimentos</h3>
+      <h2>Transformações que inspiram confiança.</h2>
+    </div>
+    <div class="right-depoimentos">
+      <span></span>
+      <p>Histórias reais de pacientes que encontraram confiança, segurança e resultados transformadores.</p>
+      <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Vamos conversar?</a>
+    </div>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../img/icons/aspas.png"
+          srcset="../img/icons/aspas@2x.png 2x"
+        alt="">
         <p>
-          A cirurgia remove excesso de pele e gordura das pálpebras, eliminando
-          olheiras e bolsas. <br />
-          Resultado: olhar rejuvenescido e aparência mais descansada.
+          Obrigada Dr. Luciano por todo o cuidado desde lá atrás quando tivemos a primeira consulta, no início do nosso desejo de realizar esse sonho, depois na cirurgia em si ouvindo nossas preocupações, nos tranquilizando e, ainda agora nos acompanhamentos após o procedimento. Certamente fizemos a melhor escolha, profissional humano e excepcional!
         </p>
-
-        <a
-          href="https://api.whatsapp.com/send?phone=5541992451500"
-          target="_blank"
-          >Agendar avaliação por WhatsApp</a
-        >
-        <a href="/cirurgias-plasticas/?cirurgia=blefaroplastia"
-          ><img src="/img/main/plus.svg" alt="" />Saiba mais sobre a
-          blefaroplastia</a
-        >
+        <h4>Cassi</h4>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/icons/aspas.png"
+          srcset="../img/icons/aspas@2x.png 2x"
+        alt="">
+        <p>
+A minha experiência com a rinoplastia foi surreal. Fiquei impressionada com a tranquilidade e o cuidado do Dr. Luciano, que priorizou o que era melhor para mim e para minha saúde, e toda a equipe me acolheu com carinho. Enfim, sou muito grata por tanto profissionalismo e pelo resultado que tem me deixado cada dia mais feliz.        <h4>Leticia</h4>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/icons/aspas.png"
+          srcset="../img/icons/aspas@2x.png 2x"
+        alt="">
+        <p>
+Depois de muito tempo, decidi realizar minha rinoplastia. Sempre quis melhorar o formato do meu nariz, que tinha uma leve curva que me incomodava. Após muitas pesquisas, conheci o Dr. Luciano, que me passou muita confiança — e então optei pela cirurgia. Fiquei extremamente satisfeito com o resultado e com toda a equipe, sempre profissional e atenciosa. Não tive nenhuma complicação antes, durante ou depois do procedimento.        </p>
+        <h4>Rafael</h4>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/icons/aspas.png"
+          srcset="../img/icons/aspas@2x.png 2x"
+        alt="">
+        <p>
+          Gostaria de deixar registrado o meu mais sincero agradecimento ao Dr. Luciano e a toda a equipe maravilhosa que me acompanhou durante o processo da minha rinoplastia. Desde o primeiro atendimento, fui recebida com carinho, atenção e profissionalismo por todas as meninas da recepção, sempre prontas para esclarecer dúvidas. O resultado superou todas as minhas expectativas, não apenas esteticamente, mas também na minha qualidade de vida e autoestima. Obrigada por transformar não apenas o meu rosto, mas também a maneira como me vejo e me sinto.
+        </p>
+        <h4>Ilizete</h4>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/icons/aspas.png"
+          srcset="../img/icons/aspas@2x.png 2x"
+        alt="">
+        <p>
+          Fez 1 ano que operei com o Dr Luciano, e só tenho a agradecer pelo trabalho impecável, eu estou amando meu nariz novo, e minha autoestima é outra depois da Rino, ele é incrível
+        </p>
+        <h4>Thalita</h4>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/icons/aspas.png"
+          srcset="../img/icons/aspas@2x.png 2x"
+        alt="">
+        <p>
+Depois de muita pesquisa, encontrei o Dr. Luciano, e foi a melhor escolha que eu poderia ter feito! Desde a primeira consulta, ele foi atencioso, esclareceu todas as minhas dúvidas e fez uma simulação que me emocionou. Para minha felicidade, o resultado superou as expectativas. A cirurgia foi tranquila, sem intercorrências, e o pós-operatório impecável: sem dor, sem complicações e com acompanhamento próximo. Hoje, vejo o resultado no espelho e tenho certeza da escolha certa. Gratidão define essa experiência!        </p>
+        <h4>Julia</h4>
       </div>
     </div>
-    <img
-      class="otoImg"
-      src="/img/blefaroplastia/blefaroplastia-banner.png"
+    <div class="swiper-buttons">
+      <img 
+      src="../img/icons/previous.png"
+      srcset="../img/icons/previous@2x.png 2x"
       alt=""
-    />
-  </div>
-</section> -->
-
-<section class="otoSection">
-  <img class="otoImg" src="/img/man-rinoplastia.png" alt="" />
-  <div class="otoFlex">
-    <p>RINOPLASTIA</p>
-    <strong>O nariz que você sempre sonhou em harmonia com o seu rosto.</strong>
-    <span>
-      Corrija as imperfeições do seu nariz com naturalidade, com rápida
-      recuperação com alta no mesmo dia.
-    </span>
-    <a href="/cirurgias-plasticas/?cirurgia=rinoplastia"
-      ><img src="/img/main/plus2.svg" alt="" />Saiba mais sobre a Rinoplastia</a
-    >
-    <a
-      class="CTA"
-      href="https://api.whatsapp.com/send?phone=5541992451500"
-      target="_blank"
-      >Agendar avaliação por WhatsApp</a
-    >
-  </div>
-</section>
-
-<section class="otoSection-revert">
-  <div class="otoFlex">
-    <p>BLEFAROPLASTIA</p>
-    <strong>Seus olhos e pálpebras sem flacidez ou bolsas</strong>
-    <span>
-      A cirurgia remove excesso de pele e gordura das pálpebras, eliminando
-      olheiras e bolsas. <br />
-      Resultado: olhar rejuvenescido e aparência mais descansada.
-    </span>
-
-    <a href="/cirurgias-plasticas/?cirurgia=blefaroplastia"
-      ><img src="/img/main/plus.svg" alt="" />Saiba mais sobre a
-      Blefaroplastia</a
-    >
-    <a
-      class="CTA"
-      href="https://api.whatsapp.com/send?phone=5541992451500"
-      target="_blank"
-      >Agendar avaliação por WhatsApp</a
-    >
-  </div>
-  <img
-    class="otoImg"
-    src="/img/blefaroplastia/blefaroplastia-banner.png"
-    alt=""
-  />
-</section>
-
-<section class="otoSection">
-  <img class="otoImg" src="/img/main/otobanner.png" alt="" />
-  <div class="otoFlex">
-    <p>OTOPLASTIA</p>
-    <strong
-      >A otoplastia é a cirurgia que corrige esteticamente as orelhas de
-      abano</strong
-    >
-    <span>
-      O procedimento pode ajudar na recuperação da autoestima e é realizado com
-      anestesia local e sedação.
-    </span>
-    <a href="/cirurgias-plasticas/?cirurgia=otoplastia"
-      ><img src="/img/main/plus2.svg" alt="" />Saiba mais sobre a Otoplastia</a
-    >
-    <a
-      class="CTA"
-      href="https://api.whatsapp.com/send?phone=5541992451500"
-      target="_blank"
-      >Agendar avaliação por WhatsApp</a
-    >
-  </div>
-</section>
-
-<section class="expBanner">
-  <strong>Mais de 15 anos de experiência em rinoplastia</strong>
-  <p>
-    O Dr. Luciano tem muito amor à sua profissão e dedica-se com afinco para a
-    satisfação de seus pacientes.
-  </p>
-</section>
-
-<section class="drluciano">
-  <div class="textFlex">
-    <span>Dr. Luciano Prestes</span>
-    <strong
-      >Acredito que cirurgias plásticas ajudam pessoas a recuperarem sua
-      autoestima e qualidade de vida.</strong
-    >
-    <a class="more" href="/drluciano"
-      ><img src="/img/main/plus2.svg" alt="" />Conheça o Dr. Luciano Prestes</a
-    >
-    <a
-      class="btn"
-      href="https://api.whatsapp.com/send?phone=5541992451500"
-      target="_blank"
-      >Agende sua consulta</a
-    >
-  </div>
-  <img class="luciano" src="/img/main/luciano.png" alt="" />
-</section>
-
-<section class="consultorio">
-  <div class="slide">
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="/img/main/office.png" style="width: 50vw" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="/img/main/office2.png" style="width: 50vw" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="/img/main/office3.png" style="width: 50vw" />
-      </div>
-    </div>
-    <br />
-
-    <div class="dots" style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      class="swiper-button-prev">
+      <img 
+        src="../img/icons/next.png"
+        srcset="../img/icons/next@2x.png 2x"
+        alt=""
+        class="swiper-button-next">
     </div>
   </div>
-
-  <div class="textFlex">
-    <strong>Estrutura para te atender</strong>
-    <p>
-      Para garantir a saúde e o bem-estar dos meus pacientes, conto com uma equipe de médicos referências em suas especialidades, além de uma infraestrutura moderna e equipada com tecnologia de ponta na Novva Otorrino.
-    </p>
-  </div>
 </section>
 
-<section class="blog">
-  <img class="bg1" src="/img/main/maskbg.svg" alt="" />
-  <img class="bg2" src="/img/main/maskbg2.svg" alt="" />
-  <div class="textFlex">
-    <span>BLOG</span>
-    <strong>Fique por dentro</strong>
-    <p>
-      Acesse nosso blog e explore um mundo de informações e conteúdo valioso.
-      Junte-se a nós e amplie seus conhecimentos com nossos artigos
-      interessantes!
-    </p>
-    <a href="/blog"
-      ><img src="/img/main/plus2.svg" alt="" />Visite nosso blog</a
-    >
+<section class="transformacoes">
+  <div class="left-transformacoes">
+    <h3>Antes e depois</h3>
+    <h2>Transformações que respeitam sua essência.</h2>
+    
+    <div class="right-transformacoes only-mobile">
+      <div class="swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/home/foto1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/home/foto2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/home/foto3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/home/foto4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/home/foto5.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/home/foto6.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/home/foto7.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/home/foto8.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/home/foto9.png" alt="">
+          </div>
+        </div>
+      </div>
+      <img src="../img/icons/voltar.png"
+        srcset="../img/icons/voltar@2x.png 2x"
+        alt=""
+        class="swiper-button-prev2">
+      <img src="../img/icons/avancar.png"
+        srcset="../img/icons/avancar@2x.png 2x"
+        alt=""
+        class="swiper-button-next2">
+    </div>
+
+    <p>Cada imagem reflete cuidado, técnica e naturalidade, respeitando a beleza individual de cada paciente. Sua jornada começa com um olhar atento e personalizado. Agende sua avaliação e viva uma experiência única de cuidado e precisão.</p>
+    <a href="https://wa.me/5541984871500?text=Ol%C3%A1,%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20por%20favor." class="cinzaButton">Agendar avaliação</a>
+  </div>
+
+  <div class="right-transformacoes tablet-desktop">
+    <div class="swiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../img/home/foto1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/home/foto2.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/home/foto3.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/home/foto4.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/home/foto5.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/home/foto6.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/home/foto7.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/home/foto8.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/home/foto9.png" alt="">
+        </div>
+      </div>
+    </div>
+    <img src="../img/icons/voltar.png"
+      srcset="../img/icons/voltar@2x.png 2x"
+      alt=""
+      class="swiper-button-prev2">
+    <img src="../img/icons/avancar.png"
+      srcset="../img/icons/avancar@2x.png 2x"
+      alt=""
+      class="swiper-button-next2">
   </div>
 </section>
 
 {% include 'footer.njk' %}
 
+
+
 <script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
+  const swiper = new Swiper(".swiper", {
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
 
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides((slideIndex += n));
-  }
+    breakpoints: {
+      // when window width is >= 480px
+      300: {
+        slidesPerView: 'auto',
+        spaceBetween: 50,
+        width: 350
+      },
+      // when window width is >= 1600px
+      1000: {
+        slidesPerView: 'auto',
+        width: 550
+      }
+    }
+  });
 
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides((slideIndex = n));
-  }
-
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  }
+  const swiper2 = new Swiper(".swiper2", {
+    slidesPerView: 'auto',
+    spaceBetween: 70,
+    navigation: {
+      nextEl: ".swiper-button-next2",
+      prevEl: ".swiper-button-prev2"
+    },
+  });
 </script>

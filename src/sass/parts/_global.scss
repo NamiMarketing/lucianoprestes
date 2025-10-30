@@ -1,15 +1,9 @@
 @use "./colors" as *;
+$freight: "FreightNeo W03 Medium";
+$montserrat: "Montserrat", sans-serif;
+$freight-bold: "FreightNeo W03 Bold";
 
-$catamaran: "Catamaran", sans-serif;
 
-@font-face {
-  font-family: "Cyrene";
-  src: url("/fonts/Cyrene.otf") format("opentype");
-}
-
-strong {
-  font-weight: bold;
-}
 
 * {
   margin: 0;
@@ -17,202 +11,86 @@ strong {
   outline: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: $montserrat;
 }
 
-*:focus {
-  outline: 0;
-}
-
-html,
-body,
-#root {
-  height: 100%;
+:root {
   font-size: 62.5%;
-  overflow-x: hidden;
-
-  // @media (max-width: 1400px) {
-  //   html,
-  //   body,
-  //   #root {
-  //     font-size: 55.5%;
-  //   }
-  // }
 }
 
 body {
   -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialised;
-  font-family: $catamaran;
+  overflow-x: hidden;
+  background-color: $background;
+}
+main{
+    overflow-x: hidden;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  position: relative;
-}
-
-body,
-input,
-button,
-textarea {
-  font-family: $catamaran;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $catamaran;
-}
-
-p {
-  font-size: 1.8rem;
-  color: $cinza2;
-}
-
-h1 {
-  font-size: 4.8rem;
-}
-
-h2 {
-  font-size: 2.4rem;
-}
-
-h3 {
-  font-size: 2.2rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
-h5 {
-  font-size: 2.4rem;
-}
-
-h6 {
-  font-size: 1.8rem;
-}
-
-a {
+a, p, h1, h2, h3, h4 {
   text-decoration: none;
-  font-size: 1.6rem;
-  cursor: pointer !important;
 }
 
-ul {
+li {
   list-style: none;
-
-  li {
-    font-size: 1.6rem;
-  }
 }
-
-button {
-  cursor: pointer;
+.whatsapp {
+  position: fixed;
+  z-index: 50;
+  bottom: 5rem;
+  right: 4rem;
+  height: 9rem;
+  width: 9rem;
+  img{
+    width: 100%;
+    height: 100%
+  }
+  @media screen and (max-width:700px) {
+    bottom: 4rem;
+    right: 3rem;
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 .only-mobile {
   display: none !important;
 }
+.mobile-tablet{
+  display: none !important;
+}
 
-@media (orientation: portrait) and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .only-mobile {
-    display: flex !important;
+    display: initial !important;
   }
 
+  .mobile-tablet{
+    display: initial !important;
+  }
+  .tablet-desktop{
+    display: none !important;
+  }
   .only-desktop {
     display: none !important;
   }
 }
-
-@media screen and (max-width: 1201px) {
-  p {
-    font-size: 1.8rem;
+@media screen and (min-width:701px) and (max-width:1260px){
+  .mobile-tablet{
+    display: initial !important;
+  }
+  .only-desktop{
+    display: none !important;
   }
 }
 
-header {
-  background-color: $tema;
-  height: 7.8rem;
-  z-index: 9;
-
-  .nav {
-    background: linear-gradient(90deg, $tema -50.1%, #70c3b8 100%);
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    align-items: center;
-    height: 7.8rem;
-    justify-content: space-between;
-    padding: 0 10rem;
-
-    .phone {
-      display: flex;
-      align-items: center;
-      img {
-        margin-right: 1rem;
-      }
-    }
-
-    p {
-      color: white;
-      font-family: "MontSerrat";
-    }
-
-    > div {
-      display: flex;
-
-      select {
-        background-color: $azulzinho;
-        color: white;
-        border: none;
-        border-radius: 1.5rem;
-        margin-left: 3rem;
-      }
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .nav {
-      padding: 0 2rem;
-    }
+@media screen and (min-width: 701px){
+  .mobile-only{
+    display: none !important; 
   }
 }
-
-select[multiple] option {
-  white-space: normal;
-  background-color: #fff;
-}
-
-optgroup {
-  background-color: #fff;
-  border: none;
-
-  option {
-    font-family: "catamaran";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-
-    /* AZUL 02 */
-
-    color: #15527a;
-    width: 100px;
-  }
-}
-
-.whatsapp {
-  position: fixed;
-  z-index: 10;
-  bottom: 30px;
-  right: 50px;
-
-  @media screen and (max-width: 600px) {
-    right: 17px;
+@media screen and (max-width: 700px) {
+  .desktop-only{
+    display: none !important;
   }
 }
