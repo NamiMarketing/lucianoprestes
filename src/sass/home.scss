@@ -631,6 +631,9 @@
     align-items: center;
     justify-content: center;
     padding: 13rem 0;
+    // padding: 13rem 0 25rem;
+    // margin-bottom: 5rem;
+    position: relative;
     .left-transformacoes{
         display: flex;
         flex-direction: column;
@@ -699,10 +702,29 @@
     .swiper-button-next2 {
         right: 0;
     }
+
+    .swiper-pagination{
+        display: flex;
+        justify-content: center;
+        .swiper-pagination-bullet{
+            width: 15rem;
+            height: auto;
+            background: none;
+            overflow: hidden;
+            opacity: 1;
+            border-radius: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     @media screen and (max-width: 700px){
         flex-direction: column;
         padding: 6rem 0;
         gap: 4rem;
+        margin-bottom: 0;
         .left-transformacoes{
             width: 90%;
             h3{
@@ -722,6 +744,7 @@
             width: 90%;
             height: auto;
             margin: auto;
+            // padding-bottom: 14rem;
             .swiper2{
                 height: auto;
                 width: calc(100% - 4rem);
@@ -736,6 +759,13 @@
                     }
                 }
             }
+            // .swiper-button-prev2,
+            // .swiper-button-next2 {
+            //     position: absolute;
+            //     top: 40%;
+            //     transform: translateY(-50%);
+            //     z-index: 10;
+            // }
               .swiper-button-prev2 {
                 width: 1rem;
             }
@@ -744,5 +774,22 @@
                 width: 1rem;
             }
         }
+        // .swiper-pagination{
+        //     flex-wrap: wrap;
+        //     gap: 1rem;
+        //     .swiper-pagination-bullet{
+        //         width: 4rem;
+        //         height: auto;
+        //         background: none;
+        //         overflow: hidden;
+        //         opacity: 1;
+        //         border-radius: 5px;
+        //         img{
+        //             width: 100%;
+        //             height: 100%;
+        //             object-fit: cover;
+        //         }
+        //     }
+        // }
     }
 }
