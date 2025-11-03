@@ -74,46 +74,50 @@ cssPath: "/css/home.css"
   </div>
   <h1>Diferenciais que transformam experiência em resultado.</h1>
   <div class="wrap-diferenciais">
-    <img src="../img/home/diferenciais.png" alt="">
+    <div class="left-wrapper">
+      <div class="left-diferenciais">
+        <img src="../img/home/diferenciais.png" alt="">
+      </div>
+    </div>
     <div class="right-diferenciais" >
-      <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">O Dr. Luciano Campelo Prestes é médico <b>especialista em Otorrinolaringologia e Cirurgia da Face.</b> Formado e mestre pela UFPR, possui aperfeiçoamento em cirurgia plástica facial avançada na Universidad de Medellín. Com ampla experiência clínica, coordenou serviço de otorrinolaringologia por mais de uma década e hoje é <b>diretor técnico da Novva Otorrino</b>, em Curitiba, onde realiza rinoplastia, blefaroplastia, otoplastia e cirurgias funcionais da face com excelência e naturalidade.</p>
+      <p>O Dr. Luciano Campelo Prestes é médico <b>especialista em Otorrinolaringologia e Cirurgia da Face.</b> Formado e mestre pela UFPR, possui aperfeiçoamento em cirurgia plástica facial avançada na Universidad de Medellín. Com ampla experiência clínica, coordenou serviço de otorrinolaringologia por mais de uma década e hoje é <b>diretor técnico da Novva Otorrino</b>, em Curitiba, onde realiza rinoplastia, blefaroplastia, otoplastia e cirurgias funcionais da face com excelência e naturalidade.</p>
       <div class="diferenciais-itens" >
-        <div class="item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+        <div class="item">
           <img 
           src="../img/home/foco.png"
           srcset="../img/home/foco@2x.png 2x"
           alt="">
           <p>Foco no resultado harmonioso e natural</p>
         </div>
-        <div class="item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+        <div class="item">
           <img 
           src="../img/home/simulacao.png"
           srcset="../img/home/simulacao@2x.png 2x"
           alt="">
           <p>Simulação com resultado cirúrgico</p>
         </div>
-        <div class="item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+        <div class="item">
           <img 
           src="../img/home/medico.png"
           srcset="../img/home/medico@2x.png 2x"
           alt="">
           <p>Médico cirurgião com mais de 18 anos de experiência</p>
         </div>
-        <div class="item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+        <div class="item">
           <img 
           src="../img/home/consulta.png"
           srcset="../img/home/consulta@2x.png 2x"
           alt="">
           <p>Consulta online e presencial</p>
         </div>
-        <div class="item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+        <div class="item">
           <img 
           src="../img/home/cirurgias.png"
           srcset="../img/home/cirurgias@2x.png 2x"
           alt="">
           <p>Cirurgias combinadas estéticas e funcionais</p>
         </div>
-        <div class="item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+        <div class="item">
           <img 
           src="../img/home/atua.png"
           srcset="../img/home/atua@2x.png 2x"
@@ -315,7 +319,7 @@ Depois de muita pesquisa, encontrei o Dr. Luciano, e foi a melhor escolha que eu
       alt=""
       class="swiper-button-next2">
   </div>
-  <!-- <div class="swiper-pagination tablet-desktop"></div> -->
+  <div class="swiper-pagination tablet-desktop"></div>
 </section>
 
 {% include 'footer.njk' %}
@@ -367,15 +371,15 @@ Depois de muita pesquisa, encontrei o Dr. Luciano, e foi a melhor escolha que eu
       nextEl: ".swiper-button-next2",
       prevEl: ".swiper-button-prev2"
     },
-  //  pagination: {
-  //     el: '.swiper-pagination',
-  //     clickable: true,
-  //     renderBullet: function (index, className) {
-  //       return `<span class="${className}">
-  //                 <img src="${thumbs[index]}" alt="thumb ${index + 1}">
-  //               </span>`;
-  //     },
-  //  }
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return `<span class="${className}">
+                  <img src="${thumbs[index]}" alt="thumb ${index + 1}">
+                </span>`;
+      },
+   }
   });
 })
 </script>
