@@ -60,11 +60,15 @@ header{
         height: 30rem;
         border-radius: 30px;
         .background{
+            position: absolute;
+            top: 0;
+            left: 0;
             filter: brightness(50%);
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: 0.5s;
+            border-radius: inherit;
         }
         .text-box{
             position: absolute;
@@ -100,14 +104,18 @@ header{
     @media screen and (max-width:700px){
         gap: 1.6rem;
         padding-top: 5rem;
+        overflow-x: hidden;
         .bio-box{
             position: relative;
             width: 90%;
+            aspect-ratio: 320 / 120;
             height: auto;
-            aspect-ratio: 32/12;
+            min-height: 0;
             border-radius: 16px;
             .background{
-                border-radius: 16px;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
             }
             .text-box{
                 gap: 1rem;
