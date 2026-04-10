@@ -1,7 +1,5 @@
 @use 'index' as *;
 
-
-
 .selector {
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +7,14 @@
   justify-content: center;
   gap: 7rem;
   margin-top: 11rem;
+  .first-row{
+    display: flex;
+    gap: 7rem;
+  }
+  .second-row{
+    display: flex;
+    gap: 7rem;
+  }
   .select{
     display: flex;
     flex-direction: column;
@@ -23,6 +29,7 @@
       font-family: 500;
       color: $cinza-700;
       padding-bottom: 1.3rem;
+      text-align: center;
     }
   }
   .selected {
@@ -34,6 +41,12 @@
   @media screen and (max-width:700px){
     gap: 3rem;
     margin-top: 5rem;
+    .first-row{
+      gap: 3rem;
+    }
+    .second-row{
+      gap: 3rem;
+    }
     .select{
       width: 7rem;
       img{
@@ -233,6 +246,14 @@
                 letter-spacing: 4%;
             }
         }
+        .medium{
+          font-size: 3.2rem;
+          line-height: 2.2rem;
+        }
+        .start{
+          align-items: flex-start;
+          text-align: left;
+        }
         p{
             font-size: 2.2rem;
             line-height: 2.2rem;
@@ -258,6 +279,10 @@
               b{
                 font-size: 2.2rem;
               }
+            }
+            .medium{
+              font-size: 2.2rem;
+              line-height: 2.2rem;
             }
             p{
               font-size: 1.6rem;
