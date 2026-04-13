@@ -36,19 +36,29 @@ cssPath: "/css/home.css"
     <span></span>
     <h1>Nossos procedimentos</h1>
   </div>
-  <div class="wrap-procedimentos">
-    <a href="/plastica" class="item-procedimentos">
-      <img src="../img/home/rinoplastia.png" alt="">
-      <p>Rinoplastia</p>
-    </a>
-    <a href="/plastica/?selection=blefaroplastia" class="item-procedimentos">
+  <div class="swiper3">
+    <div class="swiper-wrapper">
+      <a href="/plastica" class="item-procedimentos swiper-slide">
+        <img src="../img/home/rinoplastia.png" alt="">
+        <p>Rinoplastia</p>
+      </a>
+    <a href="/plastica/?selection=blefaroplastia" class="item-procedimentos swiper-slide">
       <img src="../img/home/blefaroplastia.png" alt="">
       <p>Blefaroplastia</p>
     </a>
-    <a href="/plastica/?selection=otoplastia" class="item-procedimentos">
+    <a href="/plastica/?selection=lifting" class="item-procedimentos swiper-slide">
+      <img src="../img/home/lifting.png" alt="">
+      <p>Lifting Supercilios</p>
+    </a>
+    <a href="/plastica/?selection=otoplastia" class="item-procedimentos swiper-slide">
       <img src="../img/home/otoplastia.png" alt="">
       <p>Otoplastia</p>
     </a>
+    <a href="/plastica/?selection=lobuloplastia" class="item-procedimentos swiper-slide">
+      <img src="../img/home/lobuloplastia.png" alt="">
+      <p>Lobuloplastia</p>
+    </a>
+    </div>
   </div>
 </section>
 
@@ -380,6 +390,21 @@ Depois de muita pesquisa, encontrei o Dr. Luciano, e foi a melhor escolha que eu
                 </span>`;
       },
    }
+  });
+
+  const swiper3 = new Swiper(".swiper3", {
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    breakpoints: {
+      300: {
+        slidesPerView: 'auto',
+        spaceBetween: 15
+      },
+      1000: {
+        slidesPerView: 'auto',
+        spaceBetween: 20
+      }
+    }
   });
 })
 </script>
