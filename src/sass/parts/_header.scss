@@ -4,7 +4,7 @@
 header{
     position: relative;
     >img{
-        width: 100%;;
+        width: 100%;
         height: auto;
         animation: header 0.7s ease-in forwards;
     }
@@ -41,6 +41,10 @@ header{
         }
     }
     @media screen and (max-width: 700px){
+        >img{
+            height: 65dvh;
+            object-fit:cover;
+        }
         .wrap-header{
             left: 2.2rem;
             width: 23rem;
