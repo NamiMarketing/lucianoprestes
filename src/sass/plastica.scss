@@ -39,8 +39,8 @@
     }
   }
   @media screen and (max-width:700px){
-    gap: 3rem;
-    margin-top: 5rem;
+    gap: 1.2rem;
+    margin-top: 2rem;
     .first-row{
       gap: 3rem;
     }
@@ -49,14 +49,20 @@
     }
     .select{
       width: 7rem;
+      gap: 1rem;
       img{
-        width: 7rem;
-        height: 7rem;
+        width: 6rem;
+        height: 6rem;
       }
       p{
         font-size: 1.3rem;
         line-height: 1.5rem;
         text-align: center;
+      }
+    }
+    .selected {
+      p{
+        padding-bottom: 0.5rem;
       }
     }
   }
@@ -204,7 +210,7 @@
     @media screen and (max-width:700px){
         flex-direction: column;
         width: 90%;
-        margin: 5rem auto 5rem;
+        margin: 2rem auto 5rem;
         .left-first{
             width: 100%;
             gap: 3rem;
