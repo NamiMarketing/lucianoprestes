@@ -4,16 +4,16 @@ layout: "base.njk"
 cssPath: "/css/plastica.css"
 ---
 
-<header>
+<header class="header-pages">
   {% include 'nav.njk' %}
-    <img class="tablet-desktop" src="../img/pages/plastica/header.png" alt="" />
-    <img class="only-mobile" src="../img/pages/plastica/header-mob.png" alt="" />
     
   <div class="wrap-header">
     <h1>
-      Cirurgias <br/>
-      Plásticas
+      Cirurgias Plásticas
     </h1>
+    <h2 id="title">
+      Rinoplastia
+    </h2>
   </div>
 </header>
 
@@ -416,6 +416,8 @@ cssPath: "/css/plastica.css"
   const urlParams = new URLSearchParams(window.location.search);
   let selected = urlParams.get("selection");
   let padrao = "rinoplastia"
+  const title = document.getElementById("title");
+
 
   window.onload = () => {
     if (selected) {
@@ -832,6 +834,7 @@ cssPath: "/css/plastica.css"
       </div>
     </section>
               `;
+        title.innerHTML = "RINOPLASTIA";
         break
       case "otoplastia":
       section.innerHTML = `
@@ -1069,6 +1072,7 @@ cssPath: "/css/plastica.css"
     </div>
   </section>
               `;
+        title.innerHTML = "OTOPLASTIA";
         break
       case "blefaroplastia": 
         section.innerHTML = `
@@ -1309,7 +1313,8 @@ cssPath: "/css/plastica.css"
       </div>
     </section>
               `;
-        break
+        title.innerHTML = "BLEFAROPLASTIA";
+       break
       case "lobuloplastia":
         section.innerHTML = `
           <div class="first">
@@ -1480,6 +1485,7 @@ cssPath: "/css/plastica.css"
   </div>
 
         `
+        title.innerHTML = "LOBULOPLASTIA";
         break
       case "lifting":
         section.innerHTML = `
@@ -1650,6 +1656,8 @@ cssPath: "/css/plastica.css"
     </div>
   </div>
         `
+        title.innerHTML = "LIFTING DE SUPERCÍLIOS";
+        break
         break
     }
   }

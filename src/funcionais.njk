@@ -4,16 +4,16 @@ layout: "base.njk"
 cssPath: "/css/funcionais.css"
 ---
 
-<header>
+<header class="header-pages">
   {% include 'nav.njk' %}
-    <img class="desktop-only" src="../img/pages/funcionais/header.png" alt="" />
-    <img class="mobile-only" src="../img/pages/funcionais/header-mob.png" alt="" />
     
   <div class="wrap-header">
     <h1>
-      Cirurgias <br/>
-      Funcionais
+      Cirurgias Funcionais
     </h1>
+    <h2 id="title">
+      Desvio de Septo
+    </h2>
   </div>
 </header>
 
@@ -105,6 +105,7 @@ cssPath: "/css/funcionais.css"
 <script>
   let selected = "otoneuro";
   const section = document.getElementById("otorrino");
+  const title = document.getElementById("title");
 
   const desvio = document.getElementById("desvio");
   desvio.addEventListener("click", () => {
@@ -261,6 +262,7 @@ cssPath: "/css/funcionais.css"
     </div>
   </div>
         `
+        title.innerHTML = "Desvio de Septo"
         break
       case "amigdalectomia":
         section.innerHTML = `
@@ -306,6 +308,7 @@ cssPath: "/css/funcionais.css"
     </div>
   </div>
         `
+        title.innerHTML = "Amigdalectomia"
         break
       case "fratura":
         section.innerHTML = `
@@ -355,6 +358,7 @@ cssPath: "/css/funcionais.css"
     </div>
   </div>
         `
+        title.innerHTML = "Redução de Fratura Nasal"
         break
       case "tubinectomia":
         section.innerHTML = `
@@ -418,6 +422,7 @@ cssPath: "/css/funcionais.css"
     </div>
   </div>
         `
+        title.innerHTML = "Tubinectomia"
         break
       case "uvulo":
         section.innerHTML = `
@@ -481,6 +486,7 @@ cssPath: "/css/funcionais.css"
     </div>
   </div>
         `
+        title.innerHTML = "Uvulopalatofaringoplastia"
         break
       case "uvulos":
         section.innerHTML = `
@@ -544,6 +550,7 @@ cssPath: "/css/funcionais.css"
     </div>
   </div>
         `
+        title.innerHTML = "Uvulopalatofaringoplastia"
         break
       case "adenoidectomia":
         section.innerHTML = `
@@ -606,6 +613,7 @@ cssPath: "/css/funcionais.css"
     </div>
   </div>
         `
+        title.innerHTML = "Adenoidectomia"
         break
       case "sinusite":
         section.innerHTML = `
@@ -662,6 +670,7 @@ cssPath: "/css/funcionais.css"
     </div>
   </div>
         `
+        title.innerHTML = "Sinusite"
         break
       case "adenoamigda":
         section.innerHTML = `
@@ -678,6 +687,7 @@ cssPath: "/css/funcionais.css"
    
   </div>
         `
+        title.innerHTML = "Adenoamigdalectomia"
         break
       case "adenoamigdas":
         section.innerHTML = `
@@ -694,6 +704,7 @@ cssPath: "/css/funcionais.css"
    
   </div>
         `
+        title.innerHTML = "Adenoamigdalectomia"
         break
       }
   }
