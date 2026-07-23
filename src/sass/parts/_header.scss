@@ -101,9 +101,10 @@ header{
         }
     }
     @media screen and (max-width:700px){
-      aspect-ratio: 36/20;
+      aspect-ratio: 36/15;
         .wrap-header{
-            top: 30%;
+            top: 26%;
+            gap: 5px;
             h1{
                 font-size: 1.8rem;
                 line-height: 2rem;
